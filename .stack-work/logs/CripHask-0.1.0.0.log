@@ -1,0 +1,21 @@
+Configuring CripHask-0.1.0.0...
+Preprocessing library CripHask-0.1.0.0...
+[ 1 of 15] Compiling Asociacion4      ( src/Asociacion4.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Asociacion4.o )
+[ 2 of 15] Compiling ElGamal          ( src/ElGamal.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ElGamal.o )
+[ 3 of 15] Compiling Rabin            ( src/Rabin.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Rabin.o )
+[ 4 of 15] Compiling Asociacion3      ( src/Asociacion3.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Asociacion3.o )
+[ 5 of 15] Compiling Asociacion2      ( src/Asociacion2.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Asociacion2.o )
+[ 6 of 15] Compiling DES              ( src/DES.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/DES.o )
+[ 7 of 15] Compiling Asociacion1      ( src/Asociacion1.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Asociacion1.o )
+[ 8 of 15] Compiling Criptoanalisis   ( src/Criptoanalisis.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Criptoanalisis.o )
+[ 9 of 15] Compiling Generadores      ( src/Generadores.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Generadores.o )
+[10 of 15] Compiling Permutaciones    ( src/Permutaciones.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Permutaciones.o )
+[11 of 15] Compiling Cesar            ( src/Cesar.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Cesar.o )
+[12 of 15] Compiling Afin             ( src/Afin.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Afin.o )
+[13 of 15] Compiling Vigenere         ( src/Vigenere.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Vigenere.o )
+[14 of 15] Compiling Hill             ( src/Hill.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/Hill.o )
+[15 of 15] Compiling RSA              ( src/RSA.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/RSA.o )
+In-place registering CripHask-0.1.0.0...
+Installing library in
+/Users/danrodcha/CriptHask/.stack-work/install/x86_64-osx/lts-6.3/7.10.3/lib/x86_64-osx-ghc-7.10.3/CripHask-0.1.0.0-6c6QSyYgErH80S6dnRE85H
+Registering CripHask-0.1.0.0...

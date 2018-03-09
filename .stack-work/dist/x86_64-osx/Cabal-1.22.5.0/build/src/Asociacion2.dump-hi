@@ -1,0 +1,215 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:04.111464 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Asociacion2 7103
+  interface hash: 096322520b8778141ec0e46058ca0dfa
+  ABI hash: 2628e1501049d9fba628c829d704cb78
+  export-list hash: d256f3a25e48f4b1e7f13b51c84ff79c
+  orphan hash: 20f890fbf768e2c5a577bfe073cc5bf7
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Asociacion2.bin2int
+  Asociacion2.bin2intC
+  Asociacion2.bin2intR
+  Asociacion2.codifica
+  Asociacion2.creaOcteto
+  Asociacion2.creaOcteto'
+  Asociacion2.descodifica
+  Asociacion2.int2bin
+  Asociacion2.prop_int2bin
+  Asociacion2.separaOctetos
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Char 612e350e38947989d78fc181dfd596f1
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+bc01f36c2c52796214722426d6a50ce1
+  $sconcatMap :: (a3 -> [b]) -> [a3] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a3 @ b f :: a3 -> [b] xs :: [a3] ->
+                 GHC.Base.build
+                   @ b
+                   (\ @ b1 c :: b -> b1 -> b1[OneShot] n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ a3
+                      @ b1
+                      (\ x :: a3 b2 :: b1[OneShot] -> GHC.Base.foldr @ b @ b1 c b2 (f x))
+                      n
+                      xs)) -}
+02d2aef0e219d8000ef4ec8c591e33c1
+  $wbin2intR :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+36bdfe973398fafb76e39753e71dca7c
+  $wgo :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+9847d4f3807bfd1895a1b600efcf664d
+  $wgo1 ::
+    [GHC.Types.Int]
+    -> [GHC.Types.Int] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>, Inline: [0] -}
+993e436f0bed1b9a7d4d07b6dd93c938
+  $wgo2 :: [GHC.Types.Int] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: [0] -}
+da9dc0eeb06af49b37b9d7a0890198b0
+  $wgo3 :: [GHC.Types.Int] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+7d25986e9819107da7fc74b500e28efa
+  $wgo4 :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+b120cd6fcd8e9d039a009e4d7972d1b7
+  $wgo5 :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+fc0b2d6b73010fb745b3ecb98b627131
+  $wint2bin :: GHC.Prim.Int# -> (# GHC.Types.Int, [GHC.Types.Int] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0] -}
+dd5b0a669dece0ab932f3d25baca70a0
+  $wprop_int2bin :: GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int# ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0) of wild1 {
+                   GHC.Types.False
+                   -> let {
+                        ww1 :: GHC.Prim.Int# = GHC.Prim.negateInt# ww
+                      } in
+                      case Asociacion2.$wint2bin ww1 of ww2 { (#,#) ww3 ww4 ->
+                      case Asociacion2.$wgo5
+                             (GHC.Types.: @ GHC.Types.Int ww3 ww4) of ww5 { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# ww5 ww1) } }
+                   GHC.Types.True
+                   -> case Asociacion2.$wint2bin ww of ww1 { (#,#) ww2 ww3 ->
+                      case Asociacion2.$wgo5
+                             (GHC.Types.: @ GHC.Types.Int ww2 ww3) of ww4 { DEFAULT ->
+                      GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww4 ww) } } }) -}
+36630cec158389a1134a48026f5b43ae
+  bin2int :: [GHC.Types.Int] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Types.Int] ->
+                 case Asociacion2.$wgo w of ww { DEFAULT -> GHC.Types.I# ww }) -}
+9f4a3e263771999a7fd0a153c832ec93
+  bin2intC :: [GHC.Types.Int] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Types.Int] ->
+                 case Asociacion2.$wgo1 w Asociacion2.bin2intC1 0 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+d1609f51b95f6af8442c00a960a6b397
+  bin2intC1 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 0 9223372036854775807) -}
+5c9efc4d75c3645667f9382ec2064acb
+  bin2intR :: [GHC.Types.Int] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Types.Int] ->
+                 case Asociacion2.$wbin2intR w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+85d80e6d272dd7e39afdc446fa969309
+  codifica :: GHC.Base.String -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (Asociacion2.$sconcatMap
+                   @ GHC.Types.Char
+                   @ GHC.Types.Int
+                   Asociacion2.codifica1) -}
+96d01d7232a34fa7b754dbb0557bd5e7
+  codifica1 :: GHC.Types.Char -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: GHC.Types.Char ->
+                 Asociacion2.creaOcteto (Asociacion2.int2bin (GHC.Base.ord x))) -}
+cee4c0dbad0f1bc41fcb5f11295dc9e6
+  creaOcteto :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ bs :: [GHC.Types.Int] -> Asociacion2.$wgo2 bs 8) -}
+dfafc4d76bcab9775f751f19e45ec351
+  creaOcteto' :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ bs :: [GHC.Types.Int] -> Asociacion2.$wgo3 bs 8) -}
+75be4fa9f7c051dedd58d500dc25be22
+  descodifica :: [GHC.Types.Int] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: [GHC.Types.Int] ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      c :: GHC.Types.Char -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ [GHC.Types.Int]
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ [GHC.Types.Int]
+                         c
+                         Asociacion2.descodifica1)
+                      n
+                      (Asociacion2.separaOctetos x))) -}
+b6079900020d48127059c0f9cb76a58a
+  descodifica1 :: [GHC.Types.Int] -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Types.Int] ->
+                 case Asociacion2.$wgo4 w of ww { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord#
+                           (GHC.Prim.int2Word# ww)
+                           __word 1114111) of wild1 {
+                   GHC.Types.False -> GHC.Char.chr2 ww
+                   GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# ww) } }) -}
+bf6d112db3d8a5ae8d5ac810578ce8ca
+  int2bin :: GHC.Types.Int -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Asociacion2.$wint2bin ww1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Int ww3 ww4 } }) -}
+692f8c1c637b3252d3c85aa98257f417
+  prop_int2bin :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Asociacion2.$wprop_int2bin ww1 }) -}
+40474fb658a174abd0a23eb2e57a0cf6
+  separaOctetos :: [GHC.Types.Int] -> [[GHC.Types.Int]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+"SPEC/Asociacion2 concatMap _ _ @ []" [ALWAYS] forall @ a3
+                                                      @ b
+                                                      $dFoldable :: Data.Foldable.Foldable []
+  Data.Foldable.concatMap @ a3 @ b @ [] $dFoldable
+  = Asociacion2.$sconcatMap @ a3 @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

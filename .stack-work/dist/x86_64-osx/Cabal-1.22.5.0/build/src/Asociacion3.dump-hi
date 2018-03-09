@@ -1,0 +1,137 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:03.932015 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Asociacion3 7103
+  interface hash: 25616338a0b12de7c4bd0f3a6ff03e79
+  ABI hash: 4faa55e3ba554c6b394633847365d69e
+  export-list hash: d33c985bb8e3c83aa446dfeee01dc81c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Asociacion3.bin2int4
+  Asociacion3.bool2int
+  Asociacion3.int2bin4
+  Asociacion3.int2bin4'
+  Asociacion3.largo4
+  Asociacion3.prop_int2bin4
+  Asociacion3.xor
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+a35482f2c95315dcdfc0d2a13d6f1f79
+  $w$sint2bin4' :: GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0] -}
+29da48a23c34139226722b5459972a63
+  $wgo :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+f6bd5386b98f093b49654ff2178b4211
+  $wgo1 :: [GHC.Types.Int] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+8bc03f35b81432c25bd3d3f273ce61cf
+  $wprop_int2bin4 :: GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int# ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0) of wild1 {
+                   GHC.Types.False
+                   -> Asociacion3.prop_int2bin1 (GHC.Prim.negateInt# ww)
+                   GHC.Types.True -> Asociacion3.prop_int2bin1 ww }) -}
+f78ce22db79e7af734b0fa8a3e92c983
+  bin2int4 :: [GHC.Types.Int] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: [GHC.Types.Int] ->
+                 case Asociacion3.$wgo
+                        (GHC.List.reverse1
+                           @ GHC.Types.Int
+                           w
+                           (GHC.Types.[] @ GHC.Types.Int)) of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+cc6e0f7ed994521150b2c8a34dae76a9
+  bool2int :: GHC.Types.Bool -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: GHC.Types.Bool ->
+                 case ds of wild {
+                   GHC.Types.False -> Asociacion3.bool2int2
+                   GHC.Types.True -> Asociacion3.bool2int1 }) -}
+5062b941b5899002f7dfdb282f8c7461
+  bool2int1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+95439095c9edcf7079f5a688e3ce465f
+  bool2int2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+beab9f5b66a6110cbfb4f5a7bc3e8570
+  int2bin4 :: GHC.Real.Integral a => a -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U(U(U,U,U,U,U,U,U),U,U),A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U>,
+     Unfolding: (\ @ a $dIntegral :: GHC.Real.Integral a eta :: a ->
+                 Asociacion3.largo4
+                   @ a
+                   (GHC.Real.$p1Real @ a (GHC.Real.$p1Integral @ a $dIntegral))
+                   (Asociacion3.int2bin4' @ a $dIntegral eta)) -}
+2f1d4bcab1b1dea3179901ab86fe189b
+  int2bin4' :: GHC.Real.Integral a => a -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U> -}
+4c85d16d96ac03b7afdc8c4389e99ef4
+  int2bin4_$slargo4 :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U> -}
+d423782b9d6c9037fbcb8873be3060be
+  largo4 :: GHC.Num.Num a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U> -}
+6cf08ccf24db53b3db5c742c84fb48bd
+  prop_int2bin1 :: GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ ww :: GHC.Prim.Int#[OneShot] ->
+                 case Asociacion3.$wgo1
+                        (GHC.List.reverse1
+                           @ GHC.Types.Int
+                           (Asociacion3.int2bin4_$slargo4 (Asociacion3.$w$sint2bin4' ww))
+                           (GHC.Types.[] @ GHC.Types.Int)) of ww1 { DEFAULT ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# ww1 ww) }) -}
+e70f9fe8c2858081eee3ff3498514c8a
+  prop_int2bin4 :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Asociacion3.$wprop_int2bin4 ww1 }) -}
+96da4d85c96a68df7297a62abec6dafd
+  xor :: [GHC.Types.Int] -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ xs :: [GHC.Types.Int] ys :: [GHC.Types.Int] ->
+                 Asociacion3.xor_go xs ys) -}
+426525c571cc53dabf52fe8618cd9f17
+  xor_go :: [GHC.Types.Int] -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+"SPEC largo4 @ Int" [ALWAYS] forall $dNum :: GHC.Num.Num
+                                               GHC.Types.Int
+  Asociacion3.largo4 @ GHC.Types.Int $dNum
+  = Asociacion3.int2bin4_$slargo4
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

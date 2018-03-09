@@ -1,0 +1,146 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:53.517241 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Data.List.Splits 7103
+  interface hash: b90d3c1d1fd40ff24aae9da4ad0896f2
+  ABI hash: 00f5ebf42232497057a4369c1fab7302
+  export-list hash: 7e9ccae07265e870e0d794364a248cf3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 30408e0c9e69789b49d1070389a88e38
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Data.List.Splits.splitsLeftFrom
+  ToolShed.Data.List.Splits.splitsRightFrom
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+8df1b32dedaaa51a9179a323cc85339a
+  $wsplitsFrom ::
+    (ToolShed.Data.List.Splits.Split a
+     -> ToolShed.Data.List.Splits.Split a)
+    -> GHC.Prim.Int#
+    -> [a]
+    -> (# ToolShed.Data.List.Splits.Split a,
+          [ToolShed.Data.List.Splits.Split a] #)
+  {- Arity: 3, Strictness: <L,C(U)><L,U><L,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   w :: ToolShed.Data.List.Splits.Split a
+                        -> ToolShed.Data.List.Splits.Split a
+                   ww :: GHC.Prim.Int#
+                   w1 :: [a] ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww 0) of wild {
+                   GHC.Types.False
+                   -> GHC.List.$witerate
+                        @ ([a], [a])
+                        w
+                        (case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.<=# ww 0) of wild1 {
+                           GHC.Types.False
+                           -> case w1 of wild2 {
+                                [] -> ToolShed.Data.List.Splits.splitsLeftFrom3 @ a
+                                : ipv ipv1
+                                -> case ww of ds1 {
+                                     DEFAULT
+                                     -> let {
+                                          ds2 :: ([a], [a])
+                                          = case GHC.List.splitAt_$s$wsplitAt'
+                                                   @ a
+                                                   (GHC.Prim.-# ds1 1)
+                                                   ipv1 of ww1 { (#,#) ww2 ww3 ->
+                                            (ww2, ww3) }
+                                        } in
+                                        (GHC.Types.:
+                                           @ a
+                                           ipv
+                                           (case ds2 of wild3 { (,) xs' xs'' -> xs' }),
+                                         case ds2 of wild3 { (,) xs' xs'' -> xs'' })
+                                     1 -> (GHC.Types.: @ a ipv (GHC.Types.[] @ a), ipv1) } }
+                           GHC.Types.True -> (GHC.Types.[] @ a, w1) })
+                   GHC.Types.True
+                   -> case ToolShed.Data.List.Splits.splitsLeftFrom2 @ a ww
+                      ret_ty (# ToolShed.Data.List.Splits.Split a,
+                                [ToolShed.Data.List.Splits.Split a] #)
+                      of {} }) -}
+5a15b415f9029277dfff06d98ce97fe9
+  type Split a = ([a], [a])
+1bf70176e55c1469e577cce3076b6bfc
+  splitsLeftFrom ::
+    GHC.Types.Int -> [a] -> [ToolShed.Data.List.Splits.Split a]
+  {- Arity: 2,
+     Unfolding: (\ @ a w :: GHC.Types.Int w1 :: [a] ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case ToolShed.Data.List.Splits.$wsplitsFrom
+                        @ a
+                        (ToolShed.Data.List.Splits.splitsLeftFrom1 @ a)
+                        ww1
+                        w1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ (ToolShed.Data.List.Splits.Split a) ww3 ww4 } }) -}
+b568e72c67f03240a903e4a839ccb855
+  splitsLeftFrom1 :: ([a], [a]) -> ToolShed.Data.List.Splits.Split a
+  {- Arity: 1, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ds :: ([a], [a]) ->
+                 case ds of wild { (,) l r ->
+                 (GHC.List.init @ a l,
+                  GHC.Types.: @ a (GHC.List.last @ a l) r) }) -}
+f4d4bfc1225c0f81c584e7442c5659d2
+  splitsLeftFrom2 ::
+    GHC.Prim.Int# -> [a] -> [ToolShed.Data.List.Splits.Split a]
+  {- Arity: 1, Strictness: <L,U>b -}
+05ce5f591fb1714d09d3d1f72ef6ccc7
+  splitsLeftFrom3 :: ([a], [a])
+  {- HasNoCafRefs,
+     Unfolding: (\ @ a -> (GHC.Types.[] @ a, GHC.Types.[] @ a)) -}
+83b20070a2f327fc02b2fa828b4e5079
+  splitsRightFrom ::
+    GHC.Types.Int -> [a] -> [ToolShed.Data.List.Splits.Split a]
+  {- Arity: 2,
+     Unfolding: (\ @ a w :: GHC.Types.Int w1 :: [a] ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case ToolShed.Data.List.Splits.$wsplitsFrom
+                        @ a
+                        (ToolShed.Data.List.Splits.splitsRightFrom1 @ a)
+                        ww1
+                        w1 of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ (ToolShed.Data.List.Splits.Split a) ww3 ww4 } }) -}
+911cda3e9f8386307fc64b38dcc6d5c3
+  splitsRightFrom1 :: ([a], [a]) -> ToolShed.Data.List.Splits.Split a
+  {- Arity: 1, Strictness: <S(LS),1*U(1*U,1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ds :: ([a], [a]) ->
+                 case ds of wild { (,) l ds1 ->
+                 case ds1 of wild1 {
+                   [] -> ToolShed.Data.List.Splits.splitsRightFrom2 @ a
+                   : r rs
+                   -> (GHC.Base.augment
+                         @ a
+                         (\ @ b c :: a -> b -> b[OneShot] n :: b[OneShot] ->
+                          GHC.Base.foldr @ a @ b c n l)
+                         (GHC.Types.: @ a r (GHC.Types.[] @ a)),
+                       rs) } }) -}
+53299cf2a867f16a9411627b7cd4ee0e
+  splitsRightFrom2 :: ToolShed.Data.List.Splits.Split a
+  {- Strictness: b -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

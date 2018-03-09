@@ -1,0 +1,48 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:50.165685 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Test.ReversibleEnum 7103
+  interface hash: 72de2c77d8252e82c04e3d15bea11f6e
+  ABI hash: 2366c5ef3763f367490267ad79e65977
+  export-list hash: efc4d17bbee5360940f0509aed5fc341
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9e6213d5192d6268168c9fb033f63485
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Test.ReversibleEnum.isReversible
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Enum debc6de3086023a15993ab0cecffb90b
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+24cf541d00094d3fa6454978a8ba2684
+  isReversible ::
+    (GHC.Classes.Eq r, GHC.Enum.Enum r) => r -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(A,A,1*C1(U),1*C1(U),A,A,A,A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ r
+                   $dEq :: GHC.Classes.Eq r
+                   $dEnum :: GHC.Enum.Enum r
+                   r1 :: r ->
+                 GHC.Classes.==
+                   @ r
+                   $dEq
+                   (GHC.Enum.toEnum @ r $dEnum (GHC.Enum.fromEnum @ r $dEnum r1))
+                   r1) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,144 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:53.72659 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Data.List.Runlength 7103
+  interface hash: 60a1ba3858dd654d3d89b3260e40dd07
+  ABI hash: eb685153d07e1ae6a4fed0b373d7d5b3
+  export-list hash: 1453051a714bb839db81825ef6253dbe
+  orphan hash: d82671b492ed7a4957bf66a13162850c
+  flag hash: 30408e0c9e69789b49d1070389a88e38
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Data.List.Runlength.decode
+  ToolShed.Data.List.Runlength.encode
+  ToolShed.Data.List.Runlength.getDatum
+  ToolShed.Data.List.Runlength.getLength
+  ToolShed.Data.List.Runlength.Code
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Arrow ab7f126fed349de468f94ac777dc8f4e
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+16b5a9e6e70d62beb416ff9a63dcd9ee
+  $sconcatMap :: (a3 -> [b]) -> [a3] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a3 @ b f :: a3 -> [b] xs :: [a3] ->
+                 GHC.Base.build
+                   @ b
+                   (\ @ b1 c :: b -> b1 -> b1[OneShot] n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ a3
+                      @ b1
+                      (\ x :: a3 b2 :: b1[OneShot] -> GHC.Base.foldr @ b @ b1 c b2 (f x))
+                      n
+                      xs)) -}
+d7fce4166e51a723ac66a8a7cb83eebf
+  $wa :: GHC.Prim.Int# -> a -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ @ a ww :: GHC.Prim.Int# ww1 :: a ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0 ww) of wild {
+                   GHC.Types.False -> GHC.Types.[] @ a
+                   GHC.Types.True
+                   -> let {
+                        lvl :: [a] = GHC.Types.: @ a ww1 (GHC.Types.[] @ a)
+                      } in
+                      letrec {
+                        $wxs :: GHC.Prim.Int# -> [a]
+                          {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                        = \ ww2 :: GHC.Prim.Int# ->
+                          case ww2 of ds1 {
+                            DEFAULT -> GHC.Types.: @ a ww1 ($wxs (GHC.Prim.-# ds1 1))
+                            1 -> lvl }
+                      } in
+                      $wxs ww }) -}
+130aa7e42c52d92bc5292b6404ea4b9c
+  type Code a = (GHC.Types.Int, a)
+10cc30b881818f89583c9781cd863151
+  decode :: [ToolShed.Data.List.Runlength.Code a] -> [a]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 ToolShed.Data.List.Runlength.$sconcatMap
+                   @ (GHC.Types.Int, a)
+                   @ a
+                   (ToolShed.Data.List.Runlength.decode1 @ a)) -}
+d1d9973331f7777268cd6cad208aaefd
+  decode1 :: (GHC.Types.Int, a) -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a w :: (GHC.Types.Int, a) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 ToolShed.Data.List.Runlength.$wa @ a ww4 ww2 } }) -}
+925d9c1f70576f52bc5bc378b5a20b29
+  encode ::
+    GHC.Classes.Eq a => [a] -> [ToolShed.Data.List.Runlength.Code a]
+  {- Arity: 2, Strictness: <L,1*U(1*C(C(U)),A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a $dEq :: GHC.Classes.Eq a eta :: [a] ->
+                 GHC.Base.build
+                   @ (GHC.Types.Int, a)
+                   (\ @ b1
+                      c :: (GHC.Types.Int, a) -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ [a]
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ (GHC.Types.Int, a)
+                         @ b1
+                         @ [a]
+                         c
+                         (ToolShed.Data.List.Runlength.encode1 @ a))
+                      n
+                      (Data.OldList.groupBy @ a (GHC.Classes.== @ a $dEq) eta))) -}
+2f71164f3f3ffe9dbde2d09670fe68ad
+  encode1 :: [a] -> (GHC.Types.Int, a)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a x :: [a] ->
+                 (case GHC.List.$wlenAcc @ a x 0 of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 },
+                  GHC.List.head @ a x)) -}
+ba4b0bc87a0d787c34b5d9c35fbd35b7
+  getDatum :: ToolShed.Data.List.Runlength.Code a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Tuple.snd @ GHC.Types.Int) -}
+38cb0eb9542bc537d412b403b70ed97d
+  getLength :: ToolShed.Data.List.Runlength.Code a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Tuple.fst @ GHC.Types.Int) -}
+"SPEC/ToolShed.Data.List.Runlength concatMap _ _ @ []" [ALWAYS] forall @ a3
+                                                                       @ b
+                                                                       $dFoldable :: Data.Foldable.Foldable
+                                                                                       []
+  Data.Foldable.concatMap @ a3 @ b @ [] $dFoldable
+  = ToolShed.Data.List.Runlength.$sconcatMap @ a3 @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

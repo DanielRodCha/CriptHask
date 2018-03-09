@@ -1,0 +1,338 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:51.954888 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.System.File 7103
+  interface hash: f6801c75cd692ba4e55770def7c9b8e4
+  ABI hash: 35a442f4536f8c0905410f1eecab4e31
+  export-list hash: b420a9a3fcaf1c736b98d3ef64205942
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f2871a51255fa4ba3a02e95eeadeb323
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.System.File.fromFile
+  ToolShed.System.File.getData
+  ToolShed.System.File.getFile
+  ToolShed.System.File.getFilePath
+  ToolShed.System.File.locate
+  ToolShed.System.File.LocatedData
+  ToolShed.System.File.SearchPath
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm*
+                      filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Exception e9090e246fba030faecf7b81b3e8e320
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:GHC.IO.Exception e38c1261b70caecb7af416b94c82c925
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Read b423b4506a014855edbd329b567629f3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  base-4.8.2.0:System.IO.Error f5a335c06e44d129ccf60f6e0a972e9f
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm:System.Directory a90331b0d3a954e7d46e510cba448504
+import  -/  filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m:System.FilePath 6a7eafb8f3ea5de45bf8aaade5c8108e
+import  -/  filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m:System.FilePath.Posix da2bfc0e51fee241a6f2334547c9597d
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+ec76053c5820739d5bb2159eab35b8c5
+  type LocatedData a = (GHC.IO.FilePath, a)
+9ddfe3d82bf39613e2be4064ea63f828
+  type SearchPath = [GHC.IO.FilePath]
+c7bab63fbc00aab96623d42b50345abe
+  fromFile ::
+    GHC.Read.Read a =>
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Types.IO (ToolShed.System.File.LocatedData a)
+  {- Arity: 4, Strictness: <L,1*U(1*C1(C1(U)),A,A,A)><S,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.File.fromFile1
+                  `cast`
+                (forall a1.
+                 <GHC.Read.Read a1>_R
+                 ->_R <GHC.IO.FilePath>_R
+                 ->_R <ToolShed.System.File.SearchPath>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <ToolShed.System.File.LocatedData a1>_R)) -}
+5ebc918352c7c281c55f4b5bc0116988
+  fromFile1 ::
+    GHC.Read.Read a =>
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ToolShed.System.File.LocatedData a #)
+  {- Arity: 4, Strictness: <L,1*U(1*C1(C1(U)),A,A,A)><S,U><L,U><L,U>,
+     Unfolding: (\ @ a1
+                   $dRead :: GHC.Read.Read a1
+                   fileName :: GHC.IO.FilePath
+                   directories :: ToolShed.System.File.SearchPath
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case ToolShed.System.File.fromFile4
+                        fileName
+                        directories
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) filePath fileContents ->
+                 case GHC.Read.readsPrec
+                        @ a1
+                        $dRead
+                        Text.ParserCombinators.ReadPrec.minPrec
+                        fileContents of wild1 {
+                   []
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ (ToolShed.System.File.LocatedData a1)
+                        (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                           (GHC.IO.Exception.IOError
+                              (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                              GHC.IO.Exception.UserError
+                              (GHC.Types.[] @ GHC.Types.Char)
+                              (ToolShed.System.File.fromFile3
+                                 @ [GHC.Types.Char]
+                                 (GHC.Types.: @ GHC.Types.Char)
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.shows6
+                                    (GHC.Show.showLitString
+                                       filePath
+                                       ToolShed.System.File.fromFile2)))
+                              (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                              (GHC.Base.Nothing @ GHC.IO.FilePath)))
+                        ipv
+                   : ds ds2
+                   -> case ds of wild2 { (,) x ds3 ->
+                      case ds2 of wild3 {
+                        [] -> (# ipv, (filePath, x) #)
+                        : ipv2 ipv3
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ (ToolShed.System.File.LocatedData a1)
+                             (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                                (GHC.IO.Exception.IOError
+                                   (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                                   GHC.IO.Exception.UserError
+                                   (GHC.Types.[] @ GHC.Types.Char)
+                                   (ToolShed.System.File.fromFile3
+                                      @ [GHC.Types.Char]
+                                      (GHC.Types.: @ GHC.Types.Char)
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows6
+                                         (GHC.Show.showLitString
+                                            filePath
+                                            ToolShed.System.File.fromFile2)))
+                                   (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                                   (GHC.Base.Nothing @ GHC.IO.FilePath)))
+                             ipv } } } } }) -}
+6bd2dfed75bf379b56ac98cd812668b6
+  fromFile10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Invalid filename; "#) -}
+a94b46b726ce2007f45a0878100050cd
+  fromFile2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ea6d77dbc598ff702df049a6acab4089
+  fromFile3 :: (GHC.Types.Char -> b -> b) -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U>,
+     Unfolding: (\ @ b
+                   c :: GHC.Types.Char -> b -> b[OneShot]
+                   n :: b[OneShot] ->
+                 GHC.CString.unpackFoldrCString#
+                   @ b
+                   "ToolShed.System.File.fromFile:\tfailed to parse file="#
+                   c
+                   n) -}
+a8e9c33329a9c4920bade375c6b58782
+  fromFile4 ::
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ToolShed.System.File.LocatedData GHC.Base.String #)
+  {- Arity: 3, Strictness: <S,U><L,U><L,U>,
+     Unfolding: (\ fileName :: GHC.IO.FilePath
+                   directories :: ToolShed.System.File.SearchPath
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case ToolShed.System.File.fromFile5
+                        fileName
+                        directories
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ (ToolShed.System.File.LocatedData GHC.Base.String)
+                        (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                           (GHC.IO.Exception.IOError
+                              (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                              GHC.IO.Exception.NoSuchThing
+                              (GHC.CString.unpackAppendCString#
+                                 "Can't find in "#
+                                 (GHC.Show.showList__
+                                    @ [GHC.Types.Char]
+                                    GHC.Show.shows_$cshowList
+                                    directories
+                                    (GHC.Types.[] @ GHC.Types.Char)))
+                              (GHC.Types.[] @ GHC.Types.Char)
+                              (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                              (GHC.Base.Just @ GHC.IO.FilePath fileName)))
+                        ipv
+                   : ds2 ds3
+                   -> case GHC.IO.Handle.FD.openFile1
+                             ds2
+                             GHC.IO.IOMode.ReadMode
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.IO.Handle.Text.hGetContents1
+                             ipv3
+                             ipv2 of ds { (#,#) ipv4 ipv5 ->
+                      (# ipv4, (ds2, ipv5) #) } } } }) -}
+38ae330a68b057e76a51013b9591cc05
+  fromFile5 ::
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.IO.FilePath] #)
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>,
+     Unfolding: (\ fileName :: GHC.IO.FilePath
+                   searchPath :: ToolShed.System.File.SearchPath
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 let {
+                   fileName' :: GHC.IO.FilePath
+                   = System.FilePath.Posix.normalise fileName
+                 } in
+                 case System.FilePath.Posix.isRelative fileName' of wild {
+                   GHC.Types.False
+                   -> case fileName' of wild1 {
+                        []
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ [GHC.IO.FilePath]
+                             ToolShed.System.File.fromFile8
+                             eta
+                        : ipv ipv1
+                        -> case System.Directory.doesFileExist1
+                                  wild1
+                                  eta of ds1 { (#,#) ipv2 ipv3 ->
+                           case ipv3 of wild2 {
+                             GHC.Types.False
+                             -> GHC.Prim.raiseIO#
+                                  @ GHC.Exception.SomeException
+                                  @ [GHC.IO.FilePath]
+                                  (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                                     (GHC.IO.Exception.IOError
+                                        (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                                        GHC.IO.Exception.NoSuchThing
+                                        ToolShed.System.File.fromFile7
+                                        (GHC.Types.[] @ GHC.Types.Char)
+                                        (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                                        (GHC.Base.Just @ GHC.IO.FilePath wild1)))
+                                  ipv2
+                             GHC.Types.True
+                             -> (# ipv2,
+                                   GHC.Types.:
+                                     @ GHC.IO.FilePath
+                                     wild1
+                                     (GHC.Types.[] @ GHC.IO.FilePath) #) } } }
+                   GHC.Types.True
+                   -> ToolShed.System.File.fromFile6
+                        (Data.OldList.nubBy
+                           @ GHC.IO.FilePath
+                           System.FilePath.Posix.equalFilePath
+                           (GHC.Base.map
+                              @ [GHC.Types.Char]
+                              @ [GHC.Types.Char]
+                              (\ x :: GHC.IO.FilePath ->
+                               System.FilePath.Posix.normalise
+                                 (System.FilePath.Posix.combine x fileName'))
+                              searchPath))
+                        eta }) -}
+fd370d560cfce8a8186aacc92a516d49
+  fromFile6 ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.IO.FilePath] #)
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+18b84fc8bb66eac07f42f18e4c59ac81
+  fromFile7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "No such file"#) -}
+93bd231110e2ff2351f015c6c6f85e9a
+  fromFile8 :: GHC.Exception.SomeException
+  {- Unfolding: (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                   ToolShed.System.File.fromFile9) -}
+d8ac636eb7dd307eeb4c8c0a4793ddc6
+  fromFile9 :: GHC.IO.Exception.IOException
+  {- Unfolding: (GHC.IO.Exception.IOError
+                   (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                   GHC.IO.Exception.UserError
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   ToolShed.System.File.fromFile10
+                   (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                   (GHC.Base.Nothing @ GHC.IO.FilePath)) -}
+087b6f89dc34987548d04f06f21771bd
+  getData :: ToolShed.System.File.LocatedData a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Tuple.snd @ GHC.IO.FilePath) -}
+dc24737ec32f1d0cab6c98e083245e8e
+  getFile ::
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Types.IO (ToolShed.System.File.LocatedData GHC.Base.String)
+  {- Arity: 3, Strictness: <S,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.File.fromFile4
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <ToolShed.System.File.SearchPath>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <ToolShed.System.File.LocatedData GHC.Base.String>_R)) -}
+a24284d912e2f9a3e404fdad641d0da5
+  getFilePath ::
+    ToolShed.System.File.LocatedData a -> GHC.IO.FilePath
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Tuple.fst @ GHC.IO.FilePath) -}
+27804062e19d8539ba79272990901504
+  locate ::
+    GHC.IO.FilePath
+    -> ToolShed.System.File.SearchPath
+    -> GHC.Types.IO [GHC.IO.FilePath]
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.File.fromFile5
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R <ToolShed.System.File.SearchPath>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <[GHC.IO.FilePath]>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

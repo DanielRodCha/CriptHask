@@ -1,2 +1,0 @@
-Para instalar intero en el proyecto, ejecutar
-   stack build intero syb ghc-paths

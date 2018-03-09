@@ -1,0 +1,555 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:03.242993 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:ElGamal 7103
+  interface hash: abbba48865a45b13639c5a6e875857ac
+  ABI hash: ba2f7468880c2333f9af8764d099b911
+  export-list hash: 92c443a49f077415daaefd8523041dca
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1394e30f9499a31cadefc3b6752b8f13
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ElGamal.baseG
+  ElGamal.clavePubyPrivElGamal
+  ElGamal.desencriptaElGamal
+  ElGamal.encriptaElGamal
+  ElGamal.generaEntorno
+  ElGamal.prop_CorrecElGamal1
+  ElGamal.prop_CorrecElGamal2
+module dependencies: Asociacion4
+package dependencies: DRBG-0.5.5@DRBG_AL4n35dWZmVJX33U3VHYlQ
+                      QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      RSA-2.2.0@RSA_2kQDtYGiLqcDYftIzF1lWs
+                      SHA-1.6.4.2@SHA_0ooW8jYoKWjDUFkZlEvhJX
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      asn1-encoding-0.9.4@asn1e_GjVUzUVKBTNFV6Xymtko28
+                      asn1-types-0.3.2@asn1t_1wIythtYS1MCLmALwCnyOY base-4.8.2.0
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
+                      cipher-aes128-0.7.0.1@ciphe_BG5MSNo4EzX9XGJ2hVeM9O
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      cryptohash-cryptoapi-0.1.4@crypt_1kIkiT9wUO22wFXlGHpGMQ
+                      crypto-pubkey-types-0.4.3@crypt_CtDZHgfiKBDCqbP4NASMtB
+                      cryptonite-0.15@crypt_F8W9M5THBW4FIZAr1UOHUh
+                      crypto-api-0.13.2@crypt_GAe4aPlSVmU85G1MLJlJcV
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      entropy-0.3.7@entro_7gYJ61Ci0NNBp8LB4CGmrG
+                      extra-1.4.9@extra_GLba7J4fXMPJnoudTaNKi6
+                      factory-0.2.1.2@facto_AuwIqNXXilF56rs5LyN8LE
+                      fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G ghc-prim-0.4.0.0
+                      hourglass-0.2.10@hourg_LCfvpegcEVDEeuH0foNCGl integer-gmp-1.0.0.0
+                      memory-0.13@memor_AtLbf837cOS9kNhIuRhbe8
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      parallel-3.2.1.0@paral_BEbrIfHgHtmEpYU5TfKWK9
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primes-0.2.1.0@prime_KJP3fXLypK4KWfAjY8Wn1z
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      pureMD5-2.1.3@pureM_5T9Io3zynb2A0FkLA6nQqE
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6 template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      toolshed-0.16.0.0@tools_3VVSfwRhtQOBrJAbe7B7f3
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+orphans: DRBG-0.5.5@DRBG_AL4n35dWZmVJX33U3VHYlQ:Crypto.Random.DRBG
+         RSA-2.2.0@RSA_2kQDtYGiLqcDYftIzF1lWs:Codec.Crypto.RSA.Pure
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         cipher-aes128-0.7.0.1@ciphe_BG5MSNo4EzX9XGJ2hVeM9O:Crypto.Cipher.AES128
+         crypto-api-0.13.2@crypt_GAe4aPlSVmU85G1MLJlJcV:Crypto.Classes
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+import  -/  Asociacion4 8115bdbfbaf106dab3ed7087c99a4631
+  exports: 7c019090f4e502e9c5d59c8af1ef1e56
+  expQuickMod 71fda2482677d9dab65a570a85d8ecbb
+  integerToStr 1a26ff42a06eabf54f956c74f999ef46
+  strToInteger 1a01714e1f1350ff0aac98183d2eff8c
+import  -/  DRBG-0.5.5@DRBG_AL4n35dWZmVJX33U3VHYlQ:Crypto.Random.DRBG fe152fea19a5862a84671342841d3c0d
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck 7e615a40a74c9052467718d8c88a3cda
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Gen 06f68a423d098fdb51859fed401c5be6
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Property 2d09f2ef07ce3d8d7d5d68d4a6d952e3
+import  -/  RSA-2.2.0@RSA_2kQDtYGiLqcDYftIzF1lWs:Codec.Crypto.RSA.Exceptions 14dc50649ee52bc0c70f0e1b42b29b8a
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO.Unsafe fc45e72b9d9eb2c797a8c81f5821fcd0
+import  -/  crypto-api-0.13.2@crypt_GAe4aPlSVmU85G1MLJlJcV:Crypto.Random 71a0b5ed5966d1a72ef95f433efb6fda
+import  -/  factory-0.2.1.2@facto_AuwIqNXXilF56rs5LyN8LE:Factory.Math.Implementations.PrimeFactorisation 78ba12d3b7957a6a4a052a4e4aa9999f
+import  -/  factory-0.2.1.2@facto_AuwIqNXXilF56rs5LyN8LE:Factory.Math.PrimeFactorisation 4570e7a41084853b7652d7f3e52ce68a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text b53ae191632883b10562be5cbaa0b22b
+import  -/  text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show 081cc243e944015e37c793c3b0ebfefd
+fe682da5d2e2776eee5e535fd3e4f1f1
+  $wdesencriptaElGamal ::
+    [(GHC.Base.String, GHC.Base.String)]
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> [GHC.Types.Char]
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,1*U>, Inline: [0],
+     Unfolding: (\ w :: [(GHC.Base.String, GHC.Base.String)]
+                   ww :: GHC.Integer.Type.Integer
+                   ww1 :: GHC.Integer.Type.Integer ->
+                 let {
+                   lvl1 :: GHC.Integer.Type.Integer
+                   = GHC.Integer.Type.minusInteger
+                       (GHC.Integer.Type.minusInteger ww ElGamal.baseG1)
+                       ww1
+                 } in
+                 letrec {
+                   go :: [(GHC.Base.String, GHC.Base.String)] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [(GHC.Base.String, GHC.Base.String)] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys
+                       -> case y of wild1 { (,) mensaje1 mensaje2 ->
+                          case GHC.Integer.Type.eqInteger#
+                                 ww
+                                 ElGamal.baseG2 of wild2 { DEFAULT ->
+                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                            GHC.Types.False
+                            -> GHC.Base.++
+                                 @ GHC.Types.Char
+                                 (Asociacion4.integerToStr
+                                    (GHC.Integer.Type.modInteger
+                                       (GHC.Integer.Type.timesInteger
+                                          (Asociacion4.expQuickMod
+                                             (Asociacion4.strToInteger mensaje1)
+                                             lvl1
+                                             ww)
+                                          (Asociacion4.strToInteger mensaje2))
+                                       ww))
+                                 (go ys)
+                            GHC.Types.True
+                            -> case GHC.Real.divZeroError ret_ty [GHC.Types.Char] of {} } } } }
+                 } in
+                 go w) -}
+482be7ccef1a6d046ee74e021c445978
+  $wencriptaElGamal ::
+    GHC.Base.String
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> [(GHC.Base.String, GHC.Base.String)]
+  {- Arity: 4, Strictness: <S,1*U><S,U><L,U><L,U>, Inline: [0] -}
+ea3ae2eeb23b8c6d337d3d6e8fe12794
+  baseG ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ p :: GHC.Integer.Type.Integer
+                   q :: GHC.Integer.Type.Integer ->
+                 let {
+                   lvl1 :: GHC.Integer.Type.Integer
+                   = case GHC.Integer.Type.eqInteger#
+                            q
+                            ElGamal.baseG2 of wild { DEFAULT ->
+                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                       GHC.Types.False
+                       -> GHC.Integer.Type.divInteger
+                            (GHC.Integer.Type.minusInteger p ElGamal.baseG1)
+                            q
+                       GHC.Types.True
+                       -> GHC.Real.divZeroError @ GHC.Integer.Type.Integer } }
+                 } in
+                 GHC.IO.unsafeDupablePerformIO
+                   @ GHC.Integer.Type.Integer
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                    case System.Random.TF.Init.theTFGen
+                           `cast`
+                         (GHC.IORef.NTCo:IORef[0] <System.Random.TF.Gen.TFGen>_N) of wild { GHC.STRef.STRef r# ->
+                    case GHC.Prim.atomicModifyMutVar#
+                           @ GHC.Prim.RealWorld
+                           @ System.Random.TF.Gen.TFGen
+                           @ (System.Random.TF.Gen.TFGen, System.Random.TF.Gen.TFGen)
+                           @ System.Random.TF.Gen.TFGen
+                           r#
+                           System.Random.TF.Gen.tfGenSplit
+                           s' of ds1 { (#,#) ipv ipv1 ->
+                    (# ipv,
+                       Test.QuickCheck.Gen.$wa3
+                         @ GHC.Integer.Type.Integer
+                         (let {
+                            a :: GHC.Integer.Type.Integer
+                            = GHC.Integer.Type.minusInteger p ElGamal.baseG1
+                          } in
+                          (\ r :: Test.QuickCheck.Random.QCGen
+                             ds :: GHC.Types.Int[OneShot] ->
+                           case System.Random.$wrandomIvalInteger
+                                  @ Test.QuickCheck.Random.QCGen
+                                  @ GHC.Integer.Type.Integer
+                                  Test.QuickCheck.Random.$fRandomGenQCGen
+                                  GHC.Num.$fNumInteger
+                                  ElGamal.baseG1
+                                  a
+                                  r of ww3 { (#,#) ww4 ww5 ->
+                           ww4 })
+                            `cast`
+                          (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                    <GHC.Integer.Type.Integer>_R)))
+                         (\ x :: GHC.Integer.Type.Integer ->
+                          case GHC.Integer.Type.neqInteger#
+                                 ElGamal.baseG1
+                                 (Asociacion4.expQuickMod x lvl1 p) of wild1 { DEFAULT ->
+                          GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 })
+                         ipv1 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0]))
+                         30 #) } } })
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R))) -}
+4cc74fe25efa111066a7cfe9769f5db8
+  baseG1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+d10d6515fcc0d58e1653707b5913ad57
+  baseG2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+d81da2fccbbe8503bf461787cf036196
+  clavePubyPrivElGamal ::
+    (GHC.Integer.Type.Integer, t, GHC.Integer.Type.Integer)
+    -> ((GHC.Integer.Type.Integer,
+         GHC.Integer.Type.Integer,
+         GHC.Integer.Type.Integer),
+        (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+  {- Arity: 1, Strictness: <L,1*U(U,A,U)>,
+     Unfolding: (\ @ t
+                   x :: (GHC.Integer.Type.Integer, t, GHC.Integer.Type.Integer) ->
+                 GHC.IO.unsafeDupablePerformIO
+                   @ ((GHC.Integer.Type.Integer,
+                       GHC.Integer.Type.Integer,
+                       GHC.Integer.Type.Integer),
+                      (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                    case x of wild { (,,) p ds g ->
+                    (# s',
+                       let {
+                         n :: GHC.Integer.Type.Integer
+                         = GHC.IO.unsafeDupablePerformIO
+                             @ GHC.Integer.Type.Integer
+                             (\ s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                              case GHC.Prim.noDuplicate# s1 of s'1 { DEFAULT ->
+                              case System.Random.TF.Init.theTFGen
+                                     `cast`
+                                   (GHC.IORef.NTCo:IORef[0] <System.Random.TF.Gen.TFGen>_N) of wild1 { GHC.STRef.STRef r# ->
+                              case GHC.Prim.atomicModifyMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ System.Random.TF.Gen.TFGen
+                                     @ (System.Random.TF.Gen.TFGen, System.Random.TF.Gen.TFGen)
+                                     @ System.Random.TF.Gen.TFGen
+                                     r#
+                                     System.Random.TF.Gen.tfGenSplit
+                                     s'1 of ds1 { (#,#) ipv ipv1 ->
+                              (# ipv,
+                                 case System.Random.$wrandomIvalInteger
+                                        @ Test.QuickCheck.Random.QCGen
+                                        @ GHC.Integer.Type.Integer
+                                        Test.QuickCheck.Random.$fRandomGenQCGen
+                                        GHC.Num.$fNumInteger
+                                        ElGamal.baseG1
+                                        (GHC.Integer.Type.minusInteger p ElGamal.baseG1)
+                                        ipv1
+                                          `cast`
+                                        (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) of ww3 { (#,#) ww4 ww5 ->
+                                 ww4 } #) } } })
+                               `cast`
+                             (Sym (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R))
+                       } in
+                       ((p, g, Asociacion4.expQuickMod g n p), (p, n)) #) } })
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0]
+                             <((GHC.Integer.Type.Integer,
+                                GHC.Integer.Type.Integer,
+                                GHC.Integer.Type.Integer),
+                               (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))>_R))) -}
+e600435cba51fcb1afceeaed4d44ec91
+  desencriptaElGamal ::
+    [(GHC.Base.String, GHC.Base.String)]
+    -> (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+    -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U(U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: [(GHC.Base.String, GHC.Base.String)]
+                   w1 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 ElGamal.$wdesencriptaElGamal w ww1 ww2 }) -}
+12cfd5519235872d455596a5b89f1e5e
+  encriptaElGamal ::
+    GHC.Base.String
+    -> (GHC.Integer.Type.Integer,
+        GHC.Integer.Type.Integer,
+        GHC.Integer.Type.Integer)
+    -> [(GHC.Base.String, GHC.Base.String)]
+  {- Arity: 2, Strictness: <S,1*U><S(SLL),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Base.String
+                   w1 :: (GHC.Integer.Type.Integer,
+                          GHC.Integer.Type.Integer,
+                          GHC.Integer.Type.Integer) ->
+                 case w1 of ww { (,,) ww1 ww2 ww3 ->
+                 ElGamal.$wencriptaElGamal w ww1 ww2 ww3 }) -}
+6190be5594460def161f928758dcfba8
+  generaEntorno ::
+    GHC.Types.Int
+    -> (GHC.Integer.Type.Integer,
+        GHC.Integer.Type.Integer,
+        GHC.Integer.Type.Integer)
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: (\ m :: GHC.Types.Int ->
+                 GHC.IO.unsafeDupablePerformIO
+                   @ (GHC.Integer.Type.Integer,
+                      GHC.Integer.Type.Integer,
+                      GHC.Integer.Type.Integer)
+                   (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                    case Crypto.Random.DRBG.$fCryptoRandomGenGenAutoReseed14
+                           s' of ds1 { (#,#) ipv ipv1 ->
+                    (# ipv,
+                       let {
+                         p :: GHC.Integer.Type.Integer
+                         = case Codec.Crypto.RSA.Pure.largeRandomPrime
+                                  @ (Crypto.Random.DRBG.GenAutoReseed
+                                       Crypto.Random.DRBG.HashDRBG Crypto.Random.DRBG.HashDRBG)
+                                  Crypto.Random.DRBG.$fCryptoRandomGenGenAutoReseed_$s$fCryptoRandomGenGenAutoReseed2
+                                  ipv1
+                                  m of wild {
+                             Data.Either.Left e1
+                             -> case ElGamal.generaEntorno2 e1
+                                ret_ty GHC.Integer.Type.Integer
+                                of {}
+                             Data.Either.Right a2 -> case a2 of wild1 { (,) p1 ds -> p1 } }
+                       } in
+                       let {
+                         q :: GHC.Integer.Type.Integer
+                         = case ElGamal.generaEntorno_go
+                                  (ElGamal.generaEntorno1
+                                     (GHC.Integer.Type.minusInteger p ElGamal.baseG1))
+                                  (GHC.List.lastError
+                                     @ (GHC.Integer.Type.Integer,
+                                        GHC.Types.Int)) of wild { (,) q1 ds ->
+                           q1 }
+                       } in
+                       (p, q, ElGamal.baseG p q) #) } })
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0]
+                             <(GHC.Integer.Type.Integer,
+                               GHC.Integer.Type.Integer,
+                               GHC.Integer.Type.Integer)>_R))) -}
+93c10a32e82963565a935e5ed79def04
+  generaEntorno1 ::
+    GHC.Integer.Type.Integer
+    -> Factory.Data.PrimeFactors.Factors
+         GHC.Integer.Type.Integer GHC.Types.Int
+  {- Unfolding: (Factory.Math.Implementations.PrimeFactorisation.$fAlgorithmicAlgorithm_$cprimeFactors
+                   @ GHC.Integer.Type.Integer
+                   Control.DeepSeq.$fNFDataInteger_$crnf
+                     `cast`
+                   (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Integer.Type.Integer>_N))
+                   GHC.Real.$fIntegralInteger
+                   Factory.Math.Implementations.PrimeFactorisation.TrialDivision) -}
+c68c8930f5905f5a5750c14e9a4c553b
+  generaEntorno2 ::
+    Codec.Crypto.RSA.Pure.RSAError
+    -> (GHC.Integer.Type.Integer,
+        Crypto.Random.DRBG.GenAutoReseed
+          Crypto.Random.DRBG.HashDRBG Crypto.Random.DRBG.HashDRBG)
+  {- Arity: 1, Strictness: <L,U>b -}
+4d7c0edfa69d96719fe371a0323bca62
+  generaEntorno_go ::
+    [(GHC.Integer.Type.Integer, GHC.Types.Int)]
+    -> (GHC.Integer.Type.Integer, GHC.Types.Int)
+    -> (GHC.Integer.Type.Integer, GHC.Types.Int)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U)> -}
+8aa32374dc0e0d2535bec376fe3f9ccc
+  prop_CorrecElGamal1 ::
+    GHC.Base.String -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ m :: GHC.Base.String ->
+                 case GHC.Classes.$fEq[]_$s$c==1
+                        m
+                        (GHC.Types.[] @ GHC.Types.Char) of wild {
+                   GHC.Types.False
+                   -> case (ElGamal.prop_CorrecElGamal1_go m)
+                             `cast`
+                           (Data.Monoid.NTCo:All[0]) of wild1 {
+                        GHC.Types.False
+                        -> Test.QuickCheck.Property.$fTestableDiscard2
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                        GHC.Types.True
+                        -> let {
+                             a5 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                             = Test.QuickCheck.Property.protectResults
+                                 (Test.QuickCheck.Property.MkRose
+                                    @ Test.QuickCheck.Property.Result
+                                    (case ElGamal.prop_CorrecElGamal10 of ww { (,) ww1 ww2 ->
+                                     case ElGamal.prop_CorrecElGamal4 of ww3 { (,,) ww4 ww5 ww6 ->
+                                     case GHC.Base.eqString
+                                            m
+                                            (ElGamal.$wdesencriptaElGamal
+                                               (ElGamal.$wencriptaElGamal m ww4 ww5 ww6)
+                                               ww1
+                                               ww2) of wild2 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                                    (GHC.Types.[]
+                                       @ (Test.QuickCheck.Property.Rose
+                                            Test.QuickCheck.Property.Result)))
+                           } in
+                           (\ ds :: Test.QuickCheck.Random.QCGen ds1 :: GHC.Types.Int -> a5)
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) }
+                   GHC.Types.True
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                     (Test.QuickCheck.Property.NTCo:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) }) -}
+e5282f9cdd82de6a446d9bc03142d8f6
+  prop_CorrecElGamal10 ::
+    (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Unfolding: (case ElGamal.prop_CorrecElGamal5 of wild { (,) clavPub clavPriv ->
+                 clavPriv }) -}
+126c0cc6efbc79fe9299f15c07605da3
+  prop_CorrecElGamal1_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+1de9f1f6a7c44ca55c9696323d74d6e4
+  prop_CorrecElGamal2 ::
+    GHC.Types.Int
+    -> GHC.Base.String -> Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>,
+     Unfolding: (\ n :: GHC.Types.Int m :: GHC.Base.String ->
+                 case GHC.Classes.$fEq[]_$s$c==1
+                        m
+                        (GHC.Types.[] @ GHC.Types.Char) of wild {
+                   GHC.Types.False
+                   -> case (ElGamal.prop_CorrecElGamal2_go m)
+                             `cast`
+                           (Data.Monoid.NTCo:All[0]) of wild1 {
+                        GHC.Types.False
+                        -> Test.QuickCheck.Property.$fTestableDiscard2
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                        GHC.Types.True
+                        -> let {
+                             a5 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                             = Test.QuickCheck.Property.protectResults
+                                 (Test.QuickCheck.Property.MkRose
+                                    @ Test.QuickCheck.Property.Result
+                                    (case ElGamal.clavePubyPrivElGamal
+                                            @ GHC.Integer.Type.Integer
+                                            (ElGamal.generaEntorno n) of ww { (,) ww1 ww2 ->
+                                     case ww1 of ww3 { (,,) ww4 ww5 ww6 ->
+                                     case ww2 of ww7 { (,) ww8 ww9 ->
+                                     case GHC.Base.eqString
+                                            m
+                                            (ElGamal.$wdesencriptaElGamal
+                                               (ElGamal.$wencriptaElGamal m ww4 ww5 ww6)
+                                               ww8
+                                               ww9) of wild2 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } } })
+                                    (GHC.Types.[]
+                                       @ (Test.QuickCheck.Property.Rose
+                                            Test.QuickCheck.Property.Result)))
+                           } in
+                           (\ ds :: Test.QuickCheck.Random.QCGen ds1 :: GHC.Types.Int -> a5)
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) }
+                   GHC.Types.True
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                     (Test.QuickCheck.Property.NTCo:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) }) -}
+4a67482b2341a0c6d9621822f66e3811
+  prop_CorrecElGamal2_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+9aa6fc8d0e7a163e052ee3290320174f
+  prop_CorrecElGamal4 ::
+    (GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer)
+  {- Unfolding: (case ElGamal.prop_CorrecElGamal5 of wild { (,) clavPub clavPriv ->
+                 clavPub }) -}
+0387b05b6a75afb5c619c09321d7b270
+  prop_CorrecElGamal5 ::
+    ((GHC.Integer.Type.Integer,
+      GHC.Integer.Type.Integer,
+      GHC.Integer.Type.Integer),
+     (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+  {- Unfolding: (ElGamal.clavePubyPrivElGamal
+                   @ GHC.Integer.Type.Integer
+                   ElGamal.prop_CorrecElGamal6) -}
+4b9eaf552d237b99f6585fecc36dce02
+  prop_CorrecElGamal6 ::
+    (GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer,
+     GHC.Integer.Type.Integer)
+  {- Unfolding: ((ElGamal.prop_CorrecElGamal9,
+                  ElGamal.prop_CorrecElGamal8,
+                  ElGamal.prop_CorrecElGamal7)) -}
+d513ed698bb86f3ac12f79ea96233062
+  prop_CorrecElGamal7 :: GHC.Integer.Type.Integer
+  {- Unfolding: (__integer 803233093626684455375681) -}
+07d63539079cb02277c0f896c5204501
+  prop_CorrecElGamal8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 17530839358873691) -}
+23ca2f64ac8869932715d71cb240a0c5
+  prop_CorrecElGamal9 :: GHC.Integer.Type.Integer
+  {- Unfolding: (__integer 909209565115226705262277) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

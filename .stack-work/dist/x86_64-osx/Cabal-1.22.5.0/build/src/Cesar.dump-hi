@@ -1,0 +1,268 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:07.841155 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Cesar 7103
+  interface hash: 05a7e062280232667ec72f485157e11a
+  ABI hash: c283887268bd91298ff7ba68f6f6681b
+  export-list hash: d0f985c1b5f5680300238cdcdc9df337
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Cesar.cesarF
+  Cesar.cesarG
+  Cesar.desencriptaCesarBruta
+  Cesar.desencriptaCesarFino
+  Cesar.prop_CorreccionDeCesar
+module dependencies: Asociacion1 Criptoanalisis Generadores
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0*
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL template-haskell-2.10.0.0
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  Asociacion1 7b26843ace7bd8fe186746353ab290d2
+  exports: 7db8fe3eaac51f331a6e6dfa0abc57b4
+  char2int 6d8437304c0e881dab3b6e2afe10f4c1
+  int2str f1e369e1daaa5830458c6378c6512fb2
+  str2int 23f590a1111fd984fc0822842485dd88
+import  -/  Criptoanalisis 2f5377d24f73a09ab5faed7909e61d4a
+  exports: b3d8e1179e155833514019d4eeffcdad
+  frecMayores 788c6f52dfa5f4d550ca95854b434949
+import  -/  Generadores 2defa8c3b976da9db3197c8db2d45db5
+  exports: 9c24a9f6675b7e81b0dcac4f05a0c3f6
+  mensaje 8f7d4b319dbe775ba6d0b67a6457a491
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck 7e615a40a74c9052467718d8c88a3cda
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Property 2d09f2ef07ce3d8d7d5d68d4a6d952e3
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+50c541c33a5e2588674ad9d75eaaa806
+  $wa ::
+    GHC.Prim.Int#
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Prop
+  {- Arity: 3, Strictness: <L,U><L,U(U,U,U,U,A,A)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   w :: Test.QuickCheck.Random.QCGen
+                   w1 :: GHC.Types.Int ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0) of wild {
+                   GHC.Types.False
+                   -> Test.QuickCheck.Property.$fTestableDiscard3
+                        `cast`
+                      (Sym (Test.QuickCheck.Property.NTCo:Prop[0]))
+                   GHC.Types.True
+                   -> (Test.QuickCheck.Property.IORose
+                         @ Test.QuickCheck.Property.Result
+                         (Test.QuickCheck.Property.counterexample3
+                            (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                             (# s,
+                                let {
+                                  ds1 :: (System.Random.TF.Gen.TFGen, System.Random.TF.Gen.TFGen)
+                                  = case w `cast`
+                                         (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww1 { System.Random.TF.Gen.TFGen ww2 ww3 ww4 ww5 ww6 ww7 ->
+                                    case System.Random.TF.Gen.$wtfGenSplit
+                                           ww2
+                                           ww3
+                                           ww4
+                                           ww5 of ww8 { (#,#) ww9 ww10 ->
+                                    case ww9 of ww11 { System.Random.TF.Gen.TFGen ww12 ww13 ww14 ww15 ww16 ww17 ->
+                                    case System.Random.TF.Gen.$wtfGenSplit
+                                           ww12
+                                           ww13
+                                           ww14
+                                           ww15 of ww18 { (#,#) ww19 ww20 ->
+                                    (ww19, ww20) } } } }
+                                } in
+                                let {
+                                  x :: GHC.Base.String
+                                  = Test.QuickCheck.Gen.listOf2
+                                      @ GHC.Types.Char
+                                      Generadores.genLetra
+                                      (case ds1 of wild1 { (,) g1 g2 ->
+                                       g1 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) })
+                                      w1
+                                } in
+                                ((Test.QuickCheck.Property.counterexample_$scounterexample1
+                                    (GHC.Types.:
+                                       @ GHC.Types.Char
+                                       GHC.Show.shows6
+                                       (GHC.Show.showLitString x Cesar.prop_CorreccionDeCesar2))
+                                    (GHC.Base.eqString
+                                       x
+                                       (Cesar.cesarF
+                                          (GHC.Types.I# (GHC.Prim.negateInt# ww))
+                                          (Cesar.cesarF (GHC.Types.I# ww) x))))
+                                   `cast`
+                                 (Trans
+                                      (Test.QuickCheck.Property.NTCo:Property[0])
+                                      (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                           <Test.QuickCheck.Property.Prop>_R))
+                                   (case ds1 of wild1 { (,) g1 g2 ->
+                                    g2 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) })
+                                   w1)
+                                  `cast`
+                                (Test.QuickCheck.Property.NTCo:Prop[0]) #))
+                              `cast`
+                            (Sym (GHC.Types.NTCo:IO[0]
+                                      <Test.QuickCheck.Property.Rose
+                                         Test.QuickCheck.Property.Result>_R)))
+                           `cast`
+                         (Sym (GHC.Types.NTCo:IO[0]
+                                   <Test.QuickCheck.Property.Rose
+                                      Test.QuickCheck.Property.Result>_R)))
+                        `cast`
+                      (Sym (Test.QuickCheck.Property.NTCo:Prop[0])) }) -}
+afa0285cdaa3af96e6ecaacf3a991a74
+  cesarF :: GHC.Types.Int -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: (\ k :: GHC.Types.Int m :: GHC.Base.String ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Char] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys
+                       -> GHC.Types.:
+                            @ GHC.Types.Char
+                            (case y of wild1 { GHC.Types.C# c# ->
+                             case k of wild2 { GHC.Types.I# y1 ->
+                             case GHC.Classes.modInt#
+                                    (GHC.Prim.+# (GHC.Prim.-# (GHC.Prim.ord# c#) 65) y1)
+                                    26 of ww2 { DEFAULT ->
+                             let {
+                               i# :: GHC.Prim.Int# = GHC.Prim.+# ww2 65
+                             } in
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.leWord#
+                                       (GHC.Prim.int2Word# i#)
+                                       __word 1114111) of wild3 {
+                               GHC.Types.False -> GHC.Char.chr2 i#
+                               GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# i#) } } } })
+                            (go ys) }
+                 } in
+                 go m) -}
+b21c132f348ae279e931c00b90c2bd67
+  cesarG :: GHC.Types.Int -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ k :: GHC.Types.Int ->
+                 Cesar.cesarF (GHC.Num.$fNumInt_$cnegate k)) -}
+9b5b595c1ce3982a34757326c7de2aea
+  desencriptaCesarBruta :: GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ m :: GHC.Base.String ->
+                 letrec {
+                   go :: [GHC.Types.Int] -> [GHC.Base.String]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Int] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Base.String
+                       : y ys
+                       -> GHC.Types.:
+                            @ GHC.Base.String
+                            (Cesar.cesarF
+                               (case y of wild1 { GHC.Types.I# x ->
+                                GHC.Types.I# (GHC.Prim.negateInt# x) })
+                               m)
+                            (go ys) }
+                 } in
+                 go Cesar.desencriptaCesarBruta1) -}
+db6eb796f5f6cd6acdee1a67a50fbbe2
+  desencriptaCesarBruta1 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 0 25) -}
+566937e989b1bafb04b25a0d0a3b71c6
+  desencriptaCesarFino :: GHC.Base.String -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ m :: GHC.Base.String ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> [GHC.Base.String]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Char] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Base.String
+                       : y ys
+                       -> GHC.Types.:
+                            @ GHC.Base.String
+                            (Cesar.cesarF
+                               (case y of wild1 { GHC.Types.C# c# ->
+                                GHC.Types.I#
+                                  (GHC.Prim.negateInt#
+                                     (GHC.Prim.-# (GHC.Prim.-# (GHC.Prim.ord# c#) 65) 4)) })
+                               m)
+                            (go ys) }
+                 } in
+                 go (Criptoanalisis.frecMayores m)) -}
+4ad1c0c6557f541da1c9aaf2b6634f4b
+  prop_CorreccionDeCesar ::
+    GHC.Types.Int -> Test.QuickCheck.Property.Property
+  {- Arity: 3, Strictness: <S,1*U(U)><L,U(U,U,U,U,A,A)><L,U(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Cesar.prop_CorreccionDeCesar1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Trans
+                          (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                    <Test.QuickCheck.Property.Prop>_R))
+                          (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) -}
+7d34b47746960df0046830248c929d63
+  prop_CorreccionDeCesar1 ::
+    GHC.Types.Int
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Prop
+  {- Arity: 3, Strictness: <S,1*U(U)><L,U(U,U,U,U,A,A)><L,U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Test.QuickCheck.Random.QCGen
+                   w2 :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 -> Cesar.$wa ww1 w1 w2 }) -}
+fd72034de93ed747700613e51228d574
+  prop_CorreccionDeCesar2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

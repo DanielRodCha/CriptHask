@@ -1,0 +1,483 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:09.473953 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Hill 7103
+  interface hash: 07cf1314eabf51e1f2983548af44ae59
+  ABI hash: d98f4f8970f7d5e167c3c6a62a21eb44
+  export-list hash: 42ca55d69cf54e5cb9bbd8d6b309b364
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hill.divModular
+  Hill.hillF
+  Hill.hillG
+  Hill.invertible
+  Hill.matriz
+  Hill.matrizAdj
+  Hill.matrizAdjTrasp
+  Hill.matrizInv
+  Hill.mensajeYclaveHill
+  Hill.prop_CorreccionHill
+module dependencies: Asociacion1 Generadores
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 loop-0.3.0@loop_1839SNCA0WGH7fKTWBST7w
+                      matrix-0.3.5.0@matri_87lu5PzzZxmGIKY6pKIrX1
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL template-haskell-2.10.0.0
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Fusion.Bundle
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector
+import  -/  Asociacion1 7b26843ace7bd8fe186746353ab290d2
+  exports: 7db8fe3eaac51f331a6e6dfa0abc57b4
+  int2str f1e369e1daaa5830458c6378c6512fb2
+  invMod 14e1f8cf20f1ac77170e676768762b34
+  str2int 23f590a1111fd984fc0822842485dd88
+import  -/  Generadores 2defa8c3b976da9db3197c8db2d45db5
+  exports: 9c24a9f6675b7e81b0dcac4f05a0c3f6
+  mensaje 8f7d4b319dbe775ba6d0b67a6457a491
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck 7e615a40a74c9052467718d8c88a3cda
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Arbitrary 32ee5c050808e027e9d8bd78857fe6b5
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Gen 06f68a423d098fdb51859fed401c5be6
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Property 2d09f2ef07ce3d8d7d5d68d4a6d952e3
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  matrix-0.3.5.0@matri_87lu5PzzZxmGIKY6pKIrX1:Data.Matrix 7bdf3e8e6928b31bb5d8d1f4f2dd44a3
+9682564d34a99a15ab8c9a4f6576bb0c
+  $wa ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> (# GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          Data.Vector.Vector GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,1*U(U)>,
+     Inline: [0] -}
+9790388fcb79e65d50b93413ded96fc3
+  $wa1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> (# GHC.Base.String, Data.Matrix.Matrix GHC.Types.Int #)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ w :: Test.QuickCheck.Random.QCGen
+                   w1 :: GHC.Types.Int ->
+                 let {
+                   ds1 :: (System.Random.TF.Gen.TFGen, System.Random.TF.Gen.TFGen)
+                   = case w `cast`
+                          (Test.QuickCheck.Random.NTCo:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8, ww9) } }
+                 } in
+                 (# Test.QuickCheck.Gen.listOf2
+                      @ GHC.Types.Char
+                      Generadores.genLetra
+                      (case ds1 of wild { (,) g1 g2 ->
+                       g1 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) })
+                      w1,
+                    case Hill.$wa
+                           (case ds1 of wild { (,) g1 g2 ->
+                            case g2 of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                            case System.Random.TF.Gen.$wtfGenSplit
+                                   ww1
+                                   ww2
+                                   ww3
+                                   ww4 of ww7 { (#,#) ww8 ww9 ->
+                            ww8 `cast` (Sym (Test.QuickCheck.Random.NTCo:QCGen[0])) } } })
+                           w1 of ww { (#,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ->
+                    Data.Matrix.M @ GHC.Types.Int ww1 ww2 ww3 ww4 ww5 ww6 } #)) -}
+0447b42aefb8bc544f05e9cb2c00a912
+  $wdivModular ::
+    GHC.Prim.Int# -> GHC.Types.Int -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 3, Strictness: <L,U><L,U(U)><S,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   w :: GHC.Types.Int
+                   ww1 :: GHC.Prim.Int# ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# ww1 1
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0 y) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        $wgo1 :: GHC.Prim.Int# -> GHC.Prim.Int#
+                          {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                        = \ w1 :: GHC.Prim.Int# ->
+                          case ww1 of wild1 {
+                            DEFAULT
+                            -> case w of wild2 { GHC.Types.I# y1 ->
+                               case GHC.Classes.modInt#
+                                      (GHC.Prim.*# w1 y1)
+                                      wild1 of ww2 { DEFAULT ->
+                               case GHC.Prim.tagToEnum#
+                                      @ GHC.Types.Bool
+                                      (GHC.Prim.==# ww2 ww) of wild3 {
+                                 GHC.Types.False
+                                 -> case GHC.Prim.tagToEnum#
+                                           @ GHC.Types.Bool
+                                           (GHC.Prim.==# w1 y) of wild4 {
+                                      GHC.Types.False -> $wgo1 (GHC.Prim.+# w1 1)
+                                      GHC.Types.True
+                                      -> case GHC.List.badHead ret_ty GHC.Prim.Int# of {} }
+                                 GHC.Types.True -> w1 } } }
+                            (-1)
+                            -> case ww of wild2 {
+                                 DEFAULT
+                                 -> case GHC.Prim.tagToEnum#
+                                           @ GHC.Types.Bool
+                                           (GHC.Prim.==# w1 y) of wild3 {
+                                      GHC.Types.False -> $wgo1 (GHC.Prim.+# w1 1)
+                                      GHC.Types.True
+                                      -> case GHC.List.badHead ret_ty GHC.Prim.Int# of {} }
+                                 0 -> w1 }
+                            0 -> case GHC.Real.divZeroError ret_ty GHC.Prim.Int# of {} }
+                      } in
+                      $wgo1 0
+                   GHC.Types.True
+                   -> case GHC.List.badHead ret_ty GHC.Prim.Int# of {} }) -}
+01ff6660597ca31d41ef39fbdd1ceb00
+  $winvertible ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6, Strictness: <S,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Prim.Int#
+                   ww2 :: GHC.Prim.Int#
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Prim.Int#
+                   ww5 :: Data.Vector.Vector GHC.Types.Int ->
+                 case Data.Matrix.$wdetLaplace
+                        @ GHC.Types.Int
+                        GHC.Num.$fNumInt
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5 of wild { GHC.Types.I# x ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# x 0) of wild1 {
+                   GHC.Types.False
+                   -> let {
+                        x1 :: GHC.Prim.Int# = GHC.Prim.negateInt# x
+                      } in
+                      let {
+                        nsign :: GHC.Prim.Int# = GHC.Prim.uncheckedIShiftRA# x1 63
+                      } in
+                      case {__pkg_ccall integer-gmp-1.0.0.0 integer_gmp_gcd_word GHC.Prim.Word#
+                                                                                 -> GHC.Prim.Word#
+                                                                                 -> GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld
+                                                                                 -> (# GHC.Prim.State#
+                                                                                         GHC.Prim.RealWorld,
+                                                                                       GHC.Prim.Word# #)}
+                             (GHC.Prim.int2Word# (GHC.Prim.-# (GHC.Prim.xorI# x1 nsign) nsign))
+                             __word 26
+                             GHC.Prim.realWorld# of wild2 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.word2Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False 1 -> GHC.Types.True } }
+                   GHC.Types.True
+                   -> let {
+                        nsign :: GHC.Prim.Int# = GHC.Prim.uncheckedIShiftRA# x 63
+                      } in
+                      case {__pkg_ccall integer-gmp-1.0.0.0 integer_gmp_gcd_word GHC.Prim.Word#
+                                                                                 -> GHC.Prim.Word#
+                                                                                 -> GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld
+                                                                                 -> (# GHC.Prim.State#
+                                                                                         GHC.Prim.RealWorld,
+                                                                                       GHC.Prim.Word# #)}
+                             (GHC.Prim.int2Word# (GHC.Prim.-# (GHC.Prim.xorI# x nsign) nsign))
+                             __word 26
+                             GHC.Prim.realWorld# of wild2 { (#,#) ds2 ds3 ->
+                      case GHC.Prim.word2Int# ds3 of wild4 {
+                        DEFAULT -> GHC.Types.False 1 -> GHC.Types.True } } } }) -}
+068647ce35b504bb549543465c62c774
+  $wmatrizAdj ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Int
+    -> (# GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          Data.Vector.Vector GHC.Types.Int #)
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0] -}
+786d3551d0ce7cb21cdbbf9a80bcbe42
+  $wmatrizAdjTrasp ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Int
+    -> (# GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          Data.Vector.Vector GHC.Types.Int #)
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Prim.Int#
+                   ww2 :: GHC.Prim.Int#
+                   ww3 :: GHC.Prim.Int#
+                   ww4 :: GHC.Prim.Int#
+                   ww5 :: Data.Vector.Vector GHC.Types.Int ->
+                 case Hill.$wmatrizAdj
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5 of ww6 { (#,,,,,#) ww7 ww8 ww9 ww10 ww11 ww12 ->
+                 Data.Matrix.$wtranspose
+                   @ GHC.Types.Int
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12 }) -}
+9e779d91ad45b930c1be513b70aeb4a0
+  $wmatrizInv ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Types.Int
+    -> (# GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          GHC.Prim.Int#,
+          Data.Vector.Vector GHC.Types.Int #)
+  {- Arity: 6, Strictness: <S,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0] -}
+37fe4ee771749c41703173fdbb4c0da9
+  divModular ::
+    GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 3, Strictness: <S,U(U)><L,U(U)><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int w1 :: GHC.Types.Int w2 :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case Hill.$wdivModular ww1 w1 ww3 of ww4 { DEFAULT ->
+                 GHC.Types.I# ww4 } } }) -}
+9db48e3ec1b6e1916e401c4ca6502b92
+  hillF ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S(SLLLLL),U(U,U,U,U,U,U(U,U,U))><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ xs :: Data.Matrix.Matrix GHC.Types.Int n :: GHC.Base.String ->
+                 case Hill.invertible xs of wild {
+                   GHC.Types.False -> Hill.hillF1
+                   GHC.Types.True -> Hill.hillF_aux xs n }) -}
+25746a3f6195e02c1bd0f67623e4a472
+  hillF1 :: GHC.Base.String
+  {- Strictness: b -}
+a480bc82e6b40dbb196c2b8f0fc7e6ce
+  hillF_aux ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,U,U,U(U,A,U))><S,1*U> -}
+ab8af8dad630e6e2248c2f037684ea7e
+  hillG ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U(U,U,U,U,U,U(U,U,U))>,
+     Unfolding: (\ ks :: Data.Matrix.Matrix GHC.Types.Int ->
+                 let {
+                   xs :: Data.Matrix.Matrix GHC.Types.Int
+                   = case ks of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case Hill.$wmatrizInv
+                            ww1
+                            ww2
+                            ww3
+                            ww4
+                            ww5
+                            ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                     Data.Matrix.M @ GHC.Types.Int ww8 ww9 ww10 ww11 ww12 ww13 } }
+                 } in
+                 \ n :: GHC.Base.String ->
+                 case xs of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Hill.$winvertible ww1 ww2 ww3 ww4 ww5 ww6 of wild {
+                   GHC.Types.False -> Hill.hillF1
+                   GHC.Types.True -> Hill.hillF_aux ww n } }) -}
+32b874c82114c2889363c5057e77f5aa
+  invertible :: Data.Matrix.Matrix GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(SLLLLL),1*U(U,U,U,U,U,U(U,U,U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Matrix.Matrix GHC.Types.Int ->
+                 case w of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Hill.$winvertible ww1 ww2 ww3 ww4 ww5 ww6 }) -}
+ab862bbb039f8b3928b682489b5a7efc
+  matriz ::
+    Test.QuickCheck.Gen.Gen (Data.Matrix.Matrix GHC.Types.Int)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Hill.matriz1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                          <Data.Matrix.Matrix GHC.Types.Int>_R)) -}
+9a47ef4641901886a39e9fc9560a8a83
+  matriz1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> Data.Matrix.Matrix GHC.Types.Int
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Test.QuickCheck.Random.QCGen w1 :: GHC.Types.Int ->
+                 case Hill.$wa w w1 of ww { (#,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Data.Matrix.M @ GHC.Types.Int ww1 ww2 ww3 ww4 ww5 ww6 }) -}
+c416188720e6705d7f5cff4745f21c9e
+  matrizAdj ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> Data.Matrix.Matrix GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U(U,U,U,U,U,U(U,U,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Matrix.Matrix GHC.Types.Int ->
+                 case w of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Hill.$wmatrizAdj
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.M @ GHC.Types.Int ww8 ww9 ww10 ww11 ww12 ww13 } }) -}
+6c5994223462190dfd9b0474522f54bd
+  matrizAdjTrasp ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> Data.Matrix.Matrix GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U(U,U,U,U,U,U(U,U,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Matrix.Matrix GHC.Types.Int ->
+                 case w of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Hill.$wmatrizAdjTrasp
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.M @ GHC.Types.Int ww8 ww9 ww10 ww11 ww12 ww13 } }) -}
+94247e28e33df87803fcb55c620bba68
+  matrizInv ::
+    Data.Matrix.Matrix GHC.Types.Int
+    -> Data.Matrix.Matrix GHC.Types.Int
+  {- Arity: 1, Strictness: <S(SLLLLL),U(U,U,U,U,U,U(U,U,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Data.Matrix.Matrix GHC.Types.Int ->
+                 case w of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Hill.$wmatrizInv
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.M @ GHC.Types.Int ww8 ww9 ww10 ww11 ww12 ww13 } }) -}
+c8a58c2584fb8b9c7d06b2c50901973e
+  mensajeYclaveHill ::
+    Test.QuickCheck.Gen.Gen
+      (GHC.Base.String, Data.Matrix.Matrix GHC.Types.Int)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Hill.mensajeYclaveHill1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                          <(GHC.Base.String, Data.Matrix.Matrix GHC.Types.Int)>_R)) -}
+5ecee6c84adb0274c10e6496f2f1ffcb
+  mensajeYclaveHill1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> (GHC.Base.String, Data.Matrix.Matrix GHC.Types.Int)
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Test.QuickCheck.Random.QCGen w1 :: GHC.Types.Int ->
+                 case Hill.$wa1 w w1 of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
+6aabb3afb2b14dc5ff43605b9f6283b5
+  prop_CorreccionHill :: Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Hill.prop_CorreccionHill1
+                  `cast`
+                (Trans
+                     (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                               <Test.QuickCheck.Property.Prop>_R))
+                     (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) -}
+f8aa27371a09a048805a64bbd8d87c16
+  prop_CorreccionHill1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> Test.QuickCheck.Property.Prop
+  {- Arity: 2, Strictness: <L,1*U(U,U,U,1*U,A,A)><L,U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

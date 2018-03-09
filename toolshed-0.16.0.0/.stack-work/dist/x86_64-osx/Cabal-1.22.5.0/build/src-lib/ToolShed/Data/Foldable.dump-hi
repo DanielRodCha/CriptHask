@@ -1,0 +1,148 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:54.569738 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Data.Foldable 7103
+  interface hash: d9887c4e802b6a19c9c1f819e9e29521
+  ABI hash: 57f921924ca7691447ddf59744aa5760
+  export-list hash: 36dd98227ea0dd55de75c9a16b426e92
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9870f41b8ad9b30ee93550d6a576396c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Data.Foldable.gather
+  ToolShed.Data.Foldable.gatherBy
+  ToolShed.Data.Foldable.hasDuplicates
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+import  -/  base-4.8.2.0:Control.Arrow ab7f126fed349de468f94ac777dc8f4e
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map bf7758bd12b23a367777a33fd16e39de
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base c921f79770a215e3f4c72c747cb6a28a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+1e4e0466774e83faaab454dcf27ddbac
+  gather ::
+    (Data.Foldable.Foldable f, GHC.Classes.Ord a) => f a -> [[a]]
+  {- Arity: 2,
+     Strictness: <L,1*U(A,A,1*C1(C1(U)),A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,C(C1(U)),A,A,A,A,A,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ (f :: * -> *)
+                   @ a
+                   $dFoldable :: Data.Foldable.Foldable f
+                   $dOrd :: GHC.Classes.Ord a ->
+                 ToolShed.Data.Foldable.gatherBy
+                   @ a
+                   @ a
+                   @ f
+                   $dFoldable
+                   $dOrd
+                   (GHC.Base.id @ a)) -}
+1ad5eab0a0a77cc49aea4db9db62407e
+  gatherBy ::
+    (Data.Foldable.Foldable f, GHC.Classes.Ord b) =>
+    (a -> b) -> f a -> [[a]]
+  {- Arity: 3,
+     Strictness: <L,1*U(A,A,1*C1(C1(U)),A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,C(C1(U)),A,A,A,A,A,A)><L,C(U)>,
+     Unfolding: (\ @ a
+                   @ b
+                   @ (f :: * -> *)
+                   $dFoldable :: Data.Foldable.Foldable f
+                   $dOrd :: GHC.Classes.Ord b
+                   f1 :: a -> b ->
+                 let {
+                   g :: f a -> Data.Map.Base.Map b [a]
+                   = Data.Foldable.foldr
+                       @ f
+                       $dFoldable
+                       @ a
+                       @ (Data.Map.Base.Map b [a])
+                       (\ x :: a ->
+                        let {
+                          a1 :: b = f1 x
+                        } in
+                        let {
+                          a2 :: [a] = GHC.Types.: @ a x (GHC.Types.[] @ a)
+                        } in
+                        \ eta :: Data.Map.Base.Map b [a] ->
+                        Data.Map.Base.insertWithKey
+                          @ b
+                          @ [a]
+                          $dOrd
+                          (ToolShed.Data.Foldable.gatherBy1 @ a @ b)
+                          a1
+                          a2
+                          eta)
+                       (Data.Map.Base.Tip @ b @ [a])
+                 } in
+                 \ x :: f a ->
+                 Data.Map.Base.elems1 @ b @ [a] (GHC.Types.[] @ [a]) (g x)) -}
+27247a204eebb30104db4792d17c2769
+  gatherBy1 :: b -> [a] -> [a] -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   @ b
+                   ds :: b[OneShot]
+                   x' :: [a][OneShot]
+                   y' :: [a][OneShot] ->
+                 GHC.Base.++ @ a x' y') -}
+3c31bd3d90defc7f1e882b0197c25788
+  hasDuplicates ::
+    (Data.Foldable.Foldable f, GHC.Classes.Ord a) =>
+    f a -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <L,1*U(A,A,1*C1(C1(U)),A,A,A,A,A,A,A,A,A,A,A,A,A)><L,U(A,C(C1(U)),A,A,A,A,A,A)>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ a
+                   $dFoldable :: Data.Foldable.Foldable f
+                   $dOrd :: GHC.Classes.Ord a ->
+                 let {
+                   g :: f a -> Data.Map.Base.Map a [a]
+                   = Data.Foldable.foldr
+                       @ f
+                       $dFoldable
+                       @ a
+                       @ (Data.Map.Base.Map a [a])
+                       (\ x :: a eta :: Data.Map.Base.Map a [a] ->
+                        Data.Map.Base.insertWithKey
+                          @ a
+                          @ [a]
+                          $dOrd
+                          (ToolShed.Data.Foldable.gatherBy1 @ a @ a)
+                          x
+                          (GHC.Types.: @ a x (GHC.Types.[] @ a))
+                          eta)
+                       (Data.Map.Base.Tip @ a @ [a])
+                 } in
+                 (\ x :: f a ->
+                  ToolShed.Data.Foldable.hasDuplicates1
+                    @ a
+                    (Data.Map.Base.elems1 @ a @ [a] (GHC.Types.[] @ [a]) (g x)))
+                   `cast`
+                 (<f a>_R ->_R Data.Monoid.NTCo:Any[0])) -}
+6840631f5e5a24095af6e1c0deb6ef03
+  hasDuplicates1 :: [[a]] -> Data.Monoid.Any
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,420 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:07.178149 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Asociacion1 7103
+  interface hash: 923a68eac44e165fcc1ff797bec89844
+  ABI hash: 7b26843ace7bd8fe186746353ab290d2
+  export-list hash: 7db8fe3eaac51f331a6e6dfa0abc57b4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Asociacion1.abecedario
+  Asociacion1.char2int
+  Asociacion1.enAbecedario
+  Asociacion1.int2char
+  Asociacion1.int2str
+  Asociacion1.invMod
+  Asociacion1.invmod1
+  Asociacion1.mcdExt
+  Asociacion1.prop1_invMod
+  Asociacion1.prop2_invMod1
+  Asociacion1.str2int
+module dependencies:
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0*
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL template-haskell-2.10.0.0
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck 7e615a40a74c9052467718d8c88a3cda
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Modifiers edf9604aaf2b3fe46198a7afc1bb61d9
+import  -/  QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD:Test.QuickCheck.Property 2d09f2ef07ce3d8d7d5d68d4a6d952e3
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Char 612e350e38947989d78fc181dfd596f1
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 371e90fe753f08ddedf0d2657a9ef5c4
+cd4bbd9cfe2acb7d840eee3d49f3e585
+  $w$smcdExt ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> (# GHC.Integer.Type.Integer,
+          GHC.Integer.Type.Integer,
+          GHC.Integer.Type.Integer #)
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: [0] -}
+b05d0a8f34f12f1b332278f2ac4bd32e
+  $wmcdExt :: GHC.Real.Integral a => a -> a -> (# a, a, a #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,A,C(C1(U(U,U))),A,A)><L,U><L,U>,
+     Inline: [0] -}
+453c630f5b3be7aa4a5267009bcf866c
+  abecedario :: GHC.Base.String
+  {- Unfolding: (GHC.Enum.eftChar 65 90) -}
+6d8437304c0e881dab3b6e2afe10f4c1
+  char2int :: GHC.Types.Char -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ c :: GHC.Types.Char ->
+                 case c of wild { GHC.Types.C# c# ->
+                 GHC.Types.I# (GHC.Prim.-# (GHC.Prim.ord# c#) 65) }) -}
+fefff0427a5d7e1a57ea51fc5c3fd393
+  enAbecedario :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ ds :: [GHC.Types.Char] ->
+                 case ds of wild {
+                   [] -> GHC.Types.False
+                   : ipv ipv1
+                   -> (Asociacion1.enAbecedario_go wild)
+                        `cast`
+                      (Data.Monoid.NTCo:All[0]) }) -}
+35cad872b0ed57fd32e3de32f6b89013
+  enAbecedario_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, Strictness: <S,1*U> -}
+0d7529783d2cb375c8e9b8d22c1a028a
+  int2char :: GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ n :: GHC.Types.Int ->
+                 case n of wild { GHC.Types.I# x ->
+                 let {
+                   i# :: GHC.Prim.Int# = GHC.Prim.+# x 65
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord#
+                           (GHC.Prim.int2Word# i#)
+                           __word 1114111) of wild1 {
+                   GHC.Types.False -> GHC.Char.chr2 i#
+                   GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# i#) } }) -}
+f1e369e1daaa5830458c6378c6512fb2
+  int2str :: [GHC.Types.Int] -> GHC.Base.String
+  {- Arity: 1,
+     Unfolding: (GHC.Base.map
+                   @ GHC.Types.Int
+                   @ GHC.Types.Char
+                   Asociacion1.int2char) -}
+14e1f8cf20f1ac77170e676768762b34
+  invMod :: GHC.Real.Integral a => a -> a -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,A,C(C1(U(U,U))),A,A)><L,U><L,U>,
+     Unfolding: (\ @ a
+                   $dIntegral :: GHC.Real.Integral a
+                   eta :: a
+                   eta1 :: a ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Real @ a $dReal
+                 } in
+                 let {
+                   x :: a
+                   = case Asociacion1.$wmcdExt
+                            @ a
+                            $dIntegral
+                            eta
+                            eta1 of ww { (#,,#) ww1 ww2 ww3 ->
+                     ww1 }
+                 } in
+                 case GHC.Classes.<
+                        @ a
+                        (GHC.Real.$p2Real @ a $dReal)
+                        x
+                        (GHC.Num.fromInteger @ a $dNum Asociacion1.invMod1) of wild {
+                   GHC.Types.False -> x
+                   GHC.Types.True -> GHC.Num.+ @ a $dNum x eta1 }) -}
+76a9040862c6416d26f3c50184e65f79
+  invMod1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+6cda733ab20e3c6f0e79aae4cf43b689
+  invMod_$sinvMod ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ eta :: GHC.Integer.Type.Integer
+                   eta1 :: GHC.Integer.Type.Integer ->
+                 case Asociacion1.$w$smcdExt eta eta1 of ww { (#,,#) ww1 ww2 ww3 ->
+                 case GHC.Integer.Type.ltInteger#
+                        ww1
+                        Asociacion1.invMod1 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False -> ww1
+                   GHC.Types.True -> GHC.Integer.Type.plusInteger ww1 eta1 } } }) -}
+3ea4102d768ea04b09d3af1f1f65ee6f
+  invmod1 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ a :: GHC.Integer.Type.Integer
+                   n :: GHC.Integer.Type.Integer ->
+                 case GHC.Integer.Type.eqInteger#
+                        Asociacion1.invmod3
+                        (GHC.Integer.Type.gcdInteger a n) of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False -> Asociacion1.invmod2
+                   GHC.Types.True
+                   -> let {
+                        lim :: GHC.Integer.Type.Integer
+                        = GHC.Integer.Type.minusInteger n Asociacion1.invmod3
+                      } in
+                      letrec {
+                        go :: GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+                          {- Arity: 1, Strictness: <S,U> -}
+                        = \ x :: GHC.Integer.Type.Integer ->
+                          case GHC.Integer.Type.gtInteger# x lim of wild2 { DEFAULT ->
+                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                            GHC.Types.False
+                            -> case GHC.Integer.Type.eqInteger#
+                                      n
+                                      Asociacion1.invMod1 of wild4 { DEFAULT ->
+                               case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild5 {
+                                 GHC.Types.False
+                                 -> case GHC.Integer.Type.eqInteger#
+                                           (GHC.Integer.Type.modInteger
+                                              (GHC.Integer.Type.timesInteger x a)
+                                              n)
+                                           Asociacion1.invmod3 of wild6 { DEFAULT ->
+                                    case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild6 of wild7 {
+                                      GHC.Types.False
+                                      -> go (GHC.Integer.Type.plusInteger x Asociacion1.invmod3)
+                                      GHC.Types.True -> x } }
+                                 GHC.Types.True
+                                 -> case GHC.Real.divZeroError
+                                    ret_ty GHC.Integer.Type.Integer
+                                    of {} } }
+                            GHC.Types.True -> GHC.List.badHead @ GHC.Integer.Type.Integer } }
+                      } in
+                      go Asociacion1.invmod3 } }) -}
+c98b1bceff340c3f03c78c3c24d7c159
+  invmod2 :: GHC.Integer.Type.Integer
+  {- Strictness: b -}
+d23066cd2eec02230d8f46f3484f9bd4
+  invmod3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+7120ccba0953fbc2b92c71db347d6e57
+  mcdExt :: GHC.Real.Integral a => a -> a -> (a, a, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,A,C(C1(U(U,U))),A,A)><L,U><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a w :: GHC.Real.Integral a w1 :: a w2 :: a ->
+                 case Asociacion1.$wmcdExt @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 (ww1, ww2, ww3) }) -}
+2ec5cb54607330570d5f1aa14452d3b2
+  prop1_invMod ::
+    Test.QuickCheck.Modifiers.Positive GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ ds :: Test.QuickCheck.Modifiers.Positive
+                           GHC.Integer.Type.Integer
+                   n :: GHC.Integer.Type.Integer ->
+                 case GHC.Integer.Type.gtInteger#
+                        n
+                        Asociacion1.invmod3 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                     (Test.QuickCheck.Property.NTCo:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                   GHC.Types.True
+                   -> case GHC.Integer.Type.eqInteger#
+                             (GHC.Integer.Type.gcdInteger
+                                ds
+                                  `cast`
+                                (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                     <GHC.Integer.Type.Integer>_R)
+                                n)
+                             Asociacion1.invmod3 of wild2 { DEFAULT ->
+                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                        GHC.Types.False
+                        -> Test.QuickCheck.Property.$fTestableDiscard2
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                        GHC.Types.True
+                        -> let {
+                             a5 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                             = Test.QuickCheck.Property.protectResults
+                                 (Test.QuickCheck.Property.MkRose
+                                    @ Test.QuickCheck.Property.Result
+                                    (case GHC.Integer.Type.eqInteger#
+                                            (Asociacion1.invMod_$sinvMod
+                                               ds
+                                                 `cast`
+                                               (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                                    <GHC.Integer.Type.Integer>_R)
+                                               n)
+                                            (Asociacion1.invmod1
+                                               ds
+                                                 `cast`
+                                               (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                                    <GHC.Integer.Type.Integer>_R)
+                                               n) of wild4 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild5 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                                    (GHC.Types.[]
+                                       @ (Test.QuickCheck.Property.Rose
+                                            Test.QuickCheck.Property.Result)))
+                           } in
+                           (\ ds1 :: Test.QuickCheck.Random.QCGen ds2 :: GHC.Types.Int -> a5)
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) } } } }) -}
+d03dd9c063cee16dfca1f9810de2cb3f
+  prop2_invMod1 ::
+    Test.QuickCheck.Modifiers.Positive GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ ds :: Test.QuickCheck.Modifiers.Positive
+                           GHC.Integer.Type.Integer
+                   n :: GHC.Integer.Type.Integer ->
+                 case GHC.Integer.Type.gtInteger#
+                        n
+                        Asociacion1.invmod3 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                     (Test.QuickCheck.Property.NTCo:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                   GHC.Types.True
+                   -> case GHC.Integer.Type.eqInteger#
+                             (GHC.Integer.Type.gcdInteger
+                                ds
+                                  `cast`
+                                (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                     <GHC.Integer.Type.Integer>_R)
+                                n)
+                             Asociacion1.invmod3 of wild2 { DEFAULT ->
+                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                        GHC.Types.False
+                        -> Test.QuickCheck.Property.$fTestableDiscard2
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0])))
+                        GHC.Types.True
+                        -> let {
+                             a5 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                             = Test.QuickCheck.Property.protectResults
+                                 (Test.QuickCheck.Property.MkRose
+                                    @ Test.QuickCheck.Property.Result
+                                    (let {
+                                       x :: GHC.Integer.Type.Integer
+                                       = Asociacion1.invMod_$sinvMod
+                                           ds
+                                             `cast`
+                                           (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                                <GHC.Integer.Type.Integer>_R)
+                                           n
+                                     } in
+                                     case GHC.Integer.Type.leInteger#
+                                            Asociacion1.invMod1
+                                            x of wild4 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild4 of wild5 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True
+                                       -> case GHC.Integer.Type.ltInteger# x n of wild6 { DEFAULT ->
+                                          case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild6 of wild7 {
+                                            GHC.Types.False
+                                            -> Test.QuickCheck.Property.counterexample9
+                                            GHC.Types.True
+                                            -> case GHC.Integer.Type.eqInteger#
+                                                      n
+                                                      Asociacion1.invMod1 of wild8 { DEFAULT ->
+                                               case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      wild8 of wild9 {
+                                                 GHC.Types.False
+                                                 -> case GHC.Integer.Type.eqInteger#
+                                                           (GHC.Integer.Type.modInteger
+                                                              (GHC.Integer.Type.timesInteger
+                                                                 x
+                                                                 ds
+                                                                   `cast`
+                                                                 (Test.QuickCheck.Modifiers.NTCo:Positive[0]
+                                                                      <GHC.Integer.Type.Integer>_R))
+                                                              n)
+                                                           Asociacion1.invmod3 of wild10 { DEFAULT ->
+                                                    case GHC.Prim.tagToEnum#
+                                                           @ GHC.Types.Bool
+                                                           wild10 of wild11 {
+                                                      GHC.Types.False
+                                                      -> Test.QuickCheck.Property.counterexample9
+                                                      GHC.Types.True
+                                                      -> Test.QuickCheck.Property.succeeded } }
+                                                 GHC.Types.True
+                                                 -> case GHC.Real.divZeroError
+                                                    ret_ty Test.QuickCheck.Property.Result
+                                                    of {} } } } } } })
+                                    (GHC.Types.[]
+                                       @ (Test.QuickCheck.Property.Rose
+                                            Test.QuickCheck.Property.Result)))
+                           } in
+                           (\ ds1 :: Test.QuickCheck.Random.QCGen ds2 :: GHC.Types.Int -> a5)
+                             `cast`
+                           (Trans
+                                (Sym (Test.QuickCheck.Gen.NTCo:Gen[0]
+                                          (Test.QuickCheck.Property.NTCo:Prop[0])))
+                                (Sym (Test.QuickCheck.Property.NTCo:Property[0]))) } } } }) -}
+23f590a1111fd984fc0822842485dd88
+  str2int :: GHC.Base.String -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Int
+                   Asociacion1.char2int) -}
+"SPEC invMod @ Integer" [ALWAYS] forall $dIntegral :: GHC.Real.Integral
+                                                        GHC.Integer.Type.Integer
+  Asociacion1.invMod @ GHC.Integer.Type.Integer $dIntegral
+  = Asociacion1.invMod_$sinvMod
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

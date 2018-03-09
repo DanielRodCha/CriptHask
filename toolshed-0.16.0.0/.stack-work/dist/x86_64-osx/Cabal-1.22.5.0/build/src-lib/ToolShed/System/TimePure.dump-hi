@@ -1,0 +1,147 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:50.781016 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.System.TimePure 7103
+  interface hash: 9b7dc2f735704b37b87efac00b01d9ab
+  ABI hash: af1f62012f0344d8bb00f465f2808e93
+  export-list hash: 994c68235f101b8090caf92b912754cc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f2871a51255fa4ba3a02e95eeadeb323
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.System.TimePure.getCPUSeconds
+  ToolShed.System.TimePure.printCPUSeconds
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0* deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 43ef1c409a5b322c789fa1f7098e143b
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.CPUTime fa6765cda9ae1a69d12ac02bd3030816
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59:Control.DeepSeq 246a9f10b3a819aeaf083ff6e16b5dcc
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+93086420d02f380bfe26047cada9b1e7
+  getCPUSeconds ::
+    (GHC.Real.Fractional seconds, Control.DeepSeq.NFData expression) =>
+    expression -> GHC.Types.IO (seconds, expression)
+  {- Arity: 4,
+     Strictness: <L,U(1*U(A,A,A,A,A,A,1*C1(U)),1*C1(C1(U)),A,1*C1(U))><L,1*C1(H)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.TimePure.getCPUSeconds1
+                  `cast`
+                (forall expression seconds.
+                 <GHC.Real.Fractional seconds>_R
+                 ->_R <Control.DeepSeq.NFData expression>_R
+                 ->_R <expression>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <(seconds, expression)>_R)) -}
+780962654ee91553d16154c815acd707
+  getCPUSeconds1 ::
+    (GHC.Real.Fractional seconds, Control.DeepSeq.NFData expression) =>
+    expression
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, (seconds, expression) #)
+  {- Arity: 4,
+     Strictness: <L,U(1*U(A,A,A,A,A,A,1*C1(U)),1*C1(C1(U)),A,1*C1(U))><L,1*C1(H)><L,U><L,U>,
+     Unfolding: (\ @ expression
+                   @ seconds
+                   $dFractional :: GHC.Real.Fractional seconds
+                   $dNFData :: Control.DeepSeq.NFData expression
+                   eta :: expression
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.CPUTime.getCPUTime1 eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case $dNFData
+                        `cast`
+                      (Control.DeepSeq.NTCo:NFData[0] <expression>_N)
+                        eta of wild { () ->
+                 case System.CPUTime.getCPUTime1 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    (GHC.Real./
+                       @ seconds
+                       $dFractional
+                       (GHC.Num.fromInteger
+                          @ seconds
+                          (GHC.Real.$p1Fractional @ seconds $dFractional)
+                          (GHC.Integer.Type.minusInteger ipv3 ipv1))
+                       (GHC.Real.fromRational
+                          @ seconds
+                          $dFractional
+                          ToolShed.System.TimePure.getCPUSeconds2),
+                     eta) #) } } }) -}
+c14c596a0dc83564d21c2575bddd3f5a
+  getCPUSeconds2 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   ToolShed.System.TimePure.getCPUSeconds4
+                   ToolShed.System.TimePure.getCPUSeconds3) -}
+17bbfb76ea46984ba51aa14fd617cce3
+  getCPUSeconds3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+51f576fc02871b05875fd1f86a86ff37
+  getCPUSeconds4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1000000000000) -}
+3c1bcf6269cfb49b4acacdd64cd1cf17
+  printCPUSeconds ::
+    Control.DeepSeq.NFData expression =>
+    expression -> GHC.Types.IO expression
+  {- Arity: 3, Strictness: <L,1*C1(H)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.TimePure.printCPUSeconds1
+                  `cast`
+                (forall expression.
+                 <Control.DeepSeq.NFData expression>_R
+                 ->_R <expression>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <expression>_R)) -}
+6bdb892cd227b2521dcd5780307635cb
+  printCPUSeconds1 ::
+    Control.DeepSeq.NFData expression =>
+    expression
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, expression #)
+  {- Arity: 3, Strictness: <L,1*C1(H)><L,U><L,U>,
+     Unfolding: (\ @ expression
+                   $dNFData :: Control.DeepSeq.NFData expression
+                   expression1 :: expression
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.CPUTime.getCPUTime1 eta of ds1 { (#,#) ipv ipv1 ->
+                 case $dNFData
+                        `cast`
+                      (Control.DeepSeq.NTCo:NFData[0] <expression>_N)
+                        expression1 of wild { () ->
+                 case System.CPUTime.getCPUTime1 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stderr
+                        (GHC.CString.unpackAppendCString#
+                           "CPU-seconds:\t"#
+                           (case GHC.Integer.Type.doubleFromInteger
+                                   (GHC.Integer.Type.minusInteger ipv3 ipv1) of wild1 { DEFAULT ->
+                            GHC.Float.$w$sshowSignedFloat
+                              GHC.Float.$fShowDouble_$sshowFloat
+                              GHC.Show.shows18
+                              (GHC.Prim./## wild1 1.0e12)
+                              (GHC.Types.[] @ GHC.Types.Char) }))
+                        GHC.Types.True
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 (# ipv4, expression1 #) } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

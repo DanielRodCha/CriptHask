@@ -1,0 +1,133 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:50.959313 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.System.TimeAction 7103
+  interface hash: c83dc25614af627b6bfcb14c1d81d27e
+  ABI hash: 2343b65805472072eedf75435229b2a5
+  export-list hash: 7361ca0f924a27bf00db8ce982f14175
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f2871a51255fa4ba3a02e95eeadeb323
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.System.TimeAction.getCPUSeconds
+  ToolShed.System.TimeAction.printCPUSeconds
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO.Handle.FD 43ef1c409a5b322c789fa1f7098e143b
+import  -/  base-4.8.2.0:GHC.IO.Handle.Text 06d2dc7704bcfe88a2157fd04748ace5
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.CPUTime fa6765cda9ae1a69d12ac02bd3030816
+import  -/  base-4.8.2.0:System.IO 0899686bfc1d9ef72dff3de85e99862a
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+8aab81a1e863e783f8440f0a19792fac
+  getCPUSeconds ::
+    GHC.Real.Fractional seconds =>
+    GHC.Types.IO result -> GHC.Types.IO (seconds, result)
+  {- Arity: 3,
+     Strictness: <L,U(1*U(A,A,A,A,A,A,1*C1(U)),1*C1(C1(U)),A,1*C1(U))><L,1*C1(U(U,U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.TimeAction.getCPUSeconds1
+                  `cast`
+                (forall result seconds.
+                 <GHC.Real.Fractional seconds>_R
+                 ->_R <GHC.Types.IO result>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <(seconds, result)>_R)) -}
+6307c3fb37133d9fbb3ec1cbe3a14ae7
+  getCPUSeconds1 ::
+    GHC.Real.Fractional seconds =>
+    GHC.Types.IO result
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, (seconds, result) #)
+  {- Arity: 3,
+     Strictness: <L,U(1*U(A,A,A,A,A,A,1*C1(U)),1*C1(C1(U)),A,1*C1(U))><L,1*C1(U(U,U))><L,U>,
+     Unfolding: (\ @ result
+                   @ seconds
+                   $dFractional :: GHC.Real.Fractional seconds
+                   eta :: GHC.Types.IO result
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.CPUTime.getCPUTime1 eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case eta `cast` (GHC.Types.NTCo:IO[0] <result>_R)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case System.CPUTime.getCPUTime1 ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 (# ipv4,
+                    (GHC.Real./
+                       @ seconds
+                       $dFractional
+                       (GHC.Num.fromInteger
+                          @ seconds
+                          (GHC.Real.$p1Fractional @ seconds $dFractional)
+                          (GHC.Integer.Type.minusInteger ipv5 ipv1))
+                       (GHC.Real.fromRational
+                          @ seconds
+                          $dFractional
+                          ToolShed.System.TimeAction.getCPUSeconds2),
+                     ipv3) #) } } }) -}
+0de1dc48d48f3543f014951ea72a15ad
+  getCPUSeconds2 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   ToolShed.System.TimeAction.getCPUSeconds4
+                   ToolShed.System.TimeAction.getCPUSeconds3) -}
+cccbdc7d2784b978d9cd8af81d919890
+  getCPUSeconds3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+9bce31625ead0555b51aade4d88645ca
+  getCPUSeconds4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 1000000000000) -}
+77632c64e43ac6b921d9b71fbcdb6278
+  printCPUSeconds :: GHC.Types.IO result -> GHC.Types.IO result
+  {- Arity: 2, Strictness: <L,1*C1(U(U,U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ToolShed.System.TimeAction.printCPUSeconds1
+                  `cast`
+                (forall result.
+                 <GHC.Types.IO result>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0] <result>_R)) -}
+b96e5f670c666a843f0525b3e58b1803
+  printCPUSeconds1 ::
+    GHC.Types.IO result
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, result #)
+  {- Arity: 2, Strictness: <L,1*C1(U(U,U))><L,U>,
+     Unfolding: (\ @ result
+                   action :: GHC.Types.IO result
+                   eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.CPUTime.getCPUTime1 eta of ds1 { (#,#) ipv ipv1 ->
+                 case action `cast` (GHC.Types.NTCo:IO[0] <result>_R)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case System.CPUTime.getCPUTime1 ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stderr
+                        (GHC.CString.unpackAppendCString#
+                           "CPU-seconds:\t"#
+                           (case GHC.Integer.Type.doubleFromInteger
+                                   (GHC.Integer.Type.minusInteger ipv5 ipv1) of wild { DEFAULT ->
+                            GHC.Float.$w$sshowSignedFloat
+                              GHC.Float.$fShowDouble_$sshowFloat
+                              GHC.Show.shows18
+                              (GHC.Prim./## wild 1.0e12)
+                              (GHC.Types.[] @ GHC.Types.Char) }))
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

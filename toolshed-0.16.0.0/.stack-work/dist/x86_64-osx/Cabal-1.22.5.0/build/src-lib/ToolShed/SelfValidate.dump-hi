@@ -1,0 +1,612 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:52.49317 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.SelfValidate 7103
+  interface hash: b53eae117a2aa26f370cc1b62c1e27b2
+  ABI hash: d83cd0988b3e2b498efcc1428467a874
+  export-list hash: f94a330460846d0d91ba35b24572ba2a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b3295059d91cdcd35dafb9900006e2ec
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.SelfValidate.extractErrors
+  ToolShed.SelfValidate.getFirstError
+  ToolShed.SelfValidate.SelfValidator{ToolShed.SelfValidate.getErrors ToolShed.SelfValidate.isValid}
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA*
+                      base-4.8.2.0* containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.Base a0576aaf9a801948417a257cfc0c6084
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.IArray 8a5e59347bb3b7c94f4747168380d3cd
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Arr 70f35e6bfbc61995e045edb612354887
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map bf7758bd12b23a367777a33fd16e39de
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base c921f79770a215e3f4c72c747cb6a28a
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set 7116dff3002cb8f8fc1c63ac63f4ea50
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base e94d20329e6707c26460899044ee8ac3
+0c0ba4920a7b8fe006338f22d8d60611
+  $dmisValid ::
+    ToolShed.SelfValidate.SelfValidator v => v -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: v ->
+                 GHC.List.null
+                   @ GHC.Base.String
+                   (ToolShed.SelfValidate.getErrors @ v $dSelfValidator eta)) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,) ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b) =>
+    ToolShed.SelfValidate.SelfValidator (a, b)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(C(U),A)><L,U(C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator a
+                      $dSelfValidator1 :: ToolShed.SelfValidate.SelfValidator b.
+                  @ (a, b)
+                  (ToolShed.SelfValidate.$fSelfValidator(,)_$cgetErrors
+                     @ a
+                     @ b
+                     $dSelfValidator
+                     $dSelfValidator1)
+                  (ToolShed.SelfValidate.$fSelfValidator(,)_$cisValid
+                     @ a
+                     @ b
+                     $dSelfValidator
+                     $dSelfValidator1) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,)_$cgetErrors ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b) =>
+    (a, b) -> [GHC.Base.String]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator a
+                   $dSelfValidator1 :: ToolShed.SelfValidate.SelfValidator b
+                   ds :: (a, b) ->
+                 case ds of wild { (,) x y ->
+                 GHC.Base.augment
+                   @ [GHC.Types.Char]
+                   (\ @ b1
+                      c :: [GHC.Types.Char] -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ [GHC.Types.Char]
+                      @ b1
+                      c
+                      n
+                      (ToolShed.SelfValidate.getErrors @ a $dSelfValidator x))
+                   (ToolShed.SelfValidate.getErrors @ b $dSelfValidator1 y) }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,)_$cisValid ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b) =>
+    (a, b) -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><S,1*U(U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   w :: ToolShed.SelfValidate.SelfValidator a
+                   w1 :: ToolShed.SelfValidate.SelfValidator b
+                   w2 :: (a, b) ->
+                 case w2 of ww { (,) ww1 ww2 ->
+                 ToolShed.SelfValidate.$w$cisValid @ a @ b w w1 ww1 ww2 }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,,) ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b,
+     ToolShed.SelfValidate.SelfValidator c) =>
+    ToolShed.SelfValidate.SelfValidator (a, b, c)
+  DFunId[0]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(U),A)><L,U(C(U),A)><L,U(C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      @ c
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator a
+                      $dSelfValidator1 :: ToolShed.SelfValidate.SelfValidator b
+                      $dSelfValidator2 :: ToolShed.SelfValidate.SelfValidator c.
+                  @ (a, b, c)
+                  (ToolShed.SelfValidate.$fSelfValidator(,,)_$cgetErrors
+                     @ a
+                     @ b
+                     @ c
+                     $dSelfValidator
+                     $dSelfValidator1
+                     $dSelfValidator2)
+                  (ToolShed.SelfValidate.$fSelfValidator(,,)_$cisValid
+                     @ a
+                     @ b
+                     @ c
+                     $dSelfValidator
+                     $dSelfValidator1
+                     $dSelfValidator2) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,,)_$cgetErrors ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b,
+     ToolShed.SelfValidate.SelfValidator c) =>
+    (a, b, c) -> [GHC.Base.String]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><S,1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   w :: ToolShed.SelfValidate.SelfValidator a
+                   w1 :: ToolShed.SelfValidate.SelfValidator b
+                   w2 :: ToolShed.SelfValidate.SelfValidator c
+                   w3 :: (a, b, c) ->
+                 case w3 of ww { (,,) ww1 ww2 ww3 ->
+                 ToolShed.SelfValidate.$w$cgetErrors
+                   @ a
+                   @ b
+                   @ c
+                   w
+                   w1
+                   w2
+                   ww1
+                   ww2
+                   ww3 }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator(,,)_$cisValid ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b,
+     ToolShed.SelfValidate.SelfValidator c) =>
+    (a, b, c) -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator a
+                   $dSelfValidator1 :: ToolShed.SelfValidate.SelfValidator b
+                   $dSelfValidator2 :: ToolShed.SelfValidate.SelfValidator c
+                   eta :: (a, b, c) ->
+                 case ToolShed.SelfValidate.$fSelfValidator(,,)_$cgetErrors
+                        @ a
+                        @ b
+                        @ c
+                        $dSelfValidator
+                        $dSelfValidator1
+                        $dSelfValidator2
+                        eta of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorArray ::
+    (GHC.Arr.Ix index, ToolShed.SelfValidate.SelfValidator element) =>
+    ToolShed.SelfValidate.SelfValidator (GHC.Arr.Array index element)
+  DFunId[0]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,U(U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ index
+                      @ element
+                      $dIx :: GHC.Arr.Ix index
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator element.
+                  @ (GHC.Arr.Array index element)
+                  (ToolShed.SelfValidate.$fSelfValidatorArray_$cgetErrors
+                     @ index
+                     @ element
+                     $dIx
+                     $dSelfValidator)
+                  (ToolShed.SelfValidate.$fSelfValidatorArray_$cisValid
+                     @ index
+                     @ element
+                     $dIx
+                     $dSelfValidator) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorArray_$cgetErrors ::
+    (GHC.Arr.Ix index, ToolShed.SelfValidate.SelfValidator element) =>
+    GHC.Arr.Array index element -> [GHC.Base.String]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(1*U,A)><S(SSLL),1*U(1*H,1*H,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ index
+                   @ element
+                   w :: GHC.Arr.Ix index
+                   w1 :: ToolShed.SelfValidate.SelfValidator element
+                   w2 :: GHC.Arr.Array index element ->
+                 case w2 of ww { GHC.Arr.Array ww1 ww2 ww3 ww4 ->
+                 ToolShed.SelfValidate.$w$cgetErrors1
+                   @ index
+                   @ element
+                   w1
+                   ww1
+                   ww2
+                   ww3
+                   ww4 }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorArray_$cisValid ::
+    (GHC.Arr.Ix index, ToolShed.SelfValidate.SelfValidator element) =>
+    GHC.Arr.Array index element -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><L,1*U(1*U,A)><S(SSLL),1*U(1*H,1*H,U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ index
+                   @ element
+                   $dIx :: GHC.Arr.Ix index
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator element
+                   eta :: GHC.Arr.Array index element ->
+                 case ToolShed.SelfValidate.$fSelfValidatorArray_$cgetErrors
+                        @ index
+                        @ element
+                        $dIx
+                        $dSelfValidator
+                        eta of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMap ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    ToolShed.SelfValidate.SelfValidator (Data.Map.Base.Map k v)
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ k
+                      @ v
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v.
+                  @ (Data.Map.Base.Map k v)
+                  (ToolShed.SelfValidate.$fSelfValidatorMap_$cgetErrors
+                     @ k
+                     @ v
+                     $dSelfValidator)
+                  (ToolShed.SelfValidate.$fSelfValidatorMap_$cisValid
+                     @ k
+                     @ v
+                     $dSelfValidator) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMap_$cgetErrors ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    Data.Map.Base.Map k v -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: (\ @ k
+                   @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: Data.Map.Base.Map k v ->
+                 let {
+                   g :: v -> [GHC.Base.String]
+                   = ToolShed.SelfValidate.getErrors @ v $dSelfValidator
+                 } in
+                 letrec {
+                   go10 :: [GHC.Base.String]
+                           -> Data.Map.Base.Map k v -> [GHC.Base.String]
+                     {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                   = \ z' :: [GHC.Base.String] ds :: Data.Map.Base.Map k v ->
+                     case ds of wild {
+                       Data.Map.Base.Bin dt ds1 x l r
+                       -> go10 (GHC.Base.++ @ [GHC.Types.Char] (g x) (go10 z' r)) l
+                       Data.Map.Base.Tip -> z' }
+                 } in
+                 go10 (GHC.Types.[] @ GHC.Base.String) eta) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMap_$cisValid ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    Data.Map.Base.Map k v -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ k
+                   @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: Data.Map.Base.Map k v ->
+                 case ToolShed.SelfValidate.$fSelfValidatorMap_$cgetErrors
+                        @ k
+                        @ v
+                        $dSelfValidator
+                        eta of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMaybe ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    ToolShed.SelfValidate.SelfValidator (GHC.Base.Maybe v)
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ v
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v.
+                  @ (GHC.Base.Maybe v)
+                  (ToolShed.SelfValidate.$fSelfValidatorMaybe_$cgetErrors
+                     @ v
+                     $dSelfValidator)
+                  (ToolShed.SelfValidate.$fSelfValidatorMaybe_$cisValid
+                     @ v
+                     $dSelfValidator) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMaybe_$cgetErrors ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    GHC.Base.Maybe v -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   ds :: GHC.Base.Maybe v ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> GHC.Types.[] @ GHC.Base.String
+                   GHC.Base.Just v1
+                   -> ToolShed.SelfValidate.getErrors @ v $dSelfValidator v1 }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorMaybe_$cisValid ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    GHC.Base.Maybe v -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: GHC.Base.Maybe v ->
+                 case eta of wild {
+                   GHC.Base.Nothing -> GHC.Types.True
+                   GHC.Base.Just v1
+                   -> case ToolShed.SelfValidate.getErrors
+                             @ v
+                             $dSelfValidator
+                             v1 of wild1 {
+                        [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False } }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorSet ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    ToolShed.SelfValidate.SelfValidator (Data.Set.Base.Set v)
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ v
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v.
+                  @ (Data.Set.Base.Set v)
+                  (ToolShed.SelfValidate.$fSelfValidatorSet_$cgetErrors
+                     @ v
+                     $dSelfValidator)
+                  (ToolShed.SelfValidate.$fSelfValidatorSet_$cisValid
+                     @ v
+                     $dSelfValidator) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorSet_$cgetErrors ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    Data.Set.Base.Set v -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: Data.Set.Base.Set v ->
+                 let {
+                   g :: v -> [GHC.Base.String]
+                   = ToolShed.SelfValidate.getErrors @ v $dSelfValidator
+                 } in
+                 letrec {
+                   go5 :: [GHC.Base.String]
+                          -> Data.Set.Base.Set v -> [GHC.Base.String]
+                     {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                   = \ z' :: [GHC.Base.String] ds :: Data.Set.Base.Set v ->
+                     case ds of wild {
+                       Data.Set.Base.Bin dt x l r
+                       -> go5 (GHC.Base.++ @ [GHC.Types.Char] (g x) (go5 z' r)) l
+                       Data.Set.Base.Tip -> z' }
+                 } in
+                 go5 (GHC.Types.[] @ GHC.Base.String) eta) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidatorSet_$cisValid ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    Data.Set.Base.Set v -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: Data.Set.Base.Set v ->
+                 case ToolShed.SelfValidate.$fSelfValidatorSet_$cgetErrors
+                        @ v
+                        $dSelfValidator
+                        eta of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator[] ::
+    ToolShed.SelfValidate.SelfValidator v =>
+    ToolShed.SelfValidate.SelfValidator [v]
+  DFunId[0]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ v
+                      $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v.
+                  @ [v]
+                  (ToolShed.SelfValidate.$fSelfValidator[]_$cgetErrors
+                     @ v
+                     $dSelfValidator)
+                  (ToolShed.SelfValidate.$fSelfValidator[]_$cisValid
+                     @ v
+                     $dSelfValidator) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator[]_$cgetErrors ::
+    ToolShed.SelfValidate.SelfValidator v => [v] -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: [v] ->
+                 let {
+                   f :: v -> [GHC.Base.String]
+                   = ToolShed.SelfValidate.getErrors @ v $dSelfValidator
+                 } in
+                 letrec {
+                   go :: [v] -> [GHC.Base.String] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [v] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Base.String
+                       : y ys -> GHC.Base.++ @ [GHC.Types.Char] (f y) (go ys) }
+                 } in
+                 go eta) -}
+550d5cbc671a820579727dadbf087681
+  $fSelfValidator[]_$cisValid ::
+    ToolShed.SelfValidate.SelfValidator v => [v] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*U,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   eta :: [v] ->
+                 case ToolShed.SelfValidate.$fSelfValidator[]_$cgetErrors
+                        @ v
+                        $dSelfValidator
+                        eta of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  $w$cgetErrors ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b,
+     ToolShed.SelfValidate.SelfValidator c) =>
+    a -> b -> c -> [GHC.Base.String]
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   @ c
+                   w :: ToolShed.SelfValidate.SelfValidator a
+                   w1 :: ToolShed.SelfValidate.SelfValidator b
+                   w2 :: ToolShed.SelfValidate.SelfValidator c
+                   ww :: a
+                   ww1 :: b
+                   ww2 :: c ->
+                 GHC.Base.++
+                   @ [GHC.Types.Char]
+                   (ToolShed.SelfValidate.getErrors @ a w ww)
+                   (GHC.Base.++
+                      @ [GHC.Types.Char]
+                      (ToolShed.SelfValidate.getErrors @ b w1 ww1)
+                      (ToolShed.SelfValidate.getErrors @ c w2 ww2))) -}
+550d5cbc671a820579727dadbf087681
+  $w$cgetErrors1 ::
+    ToolShed.SelfValidate.SelfValidator element =>
+    index
+    -> index
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Array# element
+    -> [GHC.Base.String]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(1*U,A)><S,1*H><S,1*H><L,U><L,U>, Inline: [0],
+     Unfolding: (\ @ index
+                   @ element
+                   w :: ToolShed.SelfValidate.SelfValidator element
+                   ww :: index
+                   ww1 :: index
+                   ww2 :: GHC.Prim.Int#
+                   ww3 :: GHC.Prim.Array# element ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# ww2 1
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0 y) of wild {
+                   GHC.Types.False
+                   -> let {
+                        f :: element -> [GHC.Base.String]
+                        = ToolShed.SelfValidate.getErrors @ element w
+                      } in
+                      letrec {
+                        go :: GHC.Prim.Int# -> [GHC.Base.String]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ x :: GHC.Prim.Int# ->
+                          GHC.Base.++
+                            @ [GHC.Types.Char]
+                            (f (case GHC.Prim.indexArray# @ element ww3 x of ds4 { (##) ipv ->
+                                ipv }))
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x y) of wild1 {
+                               GHC.Types.False -> go (GHC.Prim.+# x 1)
+                               GHC.Types.True -> GHC.Types.[] @ GHC.Base.String })
+                      } in
+                      go 0
+                   GHC.Types.True -> GHC.Types.[] @ GHC.Base.String }) -}
+550d5cbc671a820579727dadbf087681
+  $w$cisValid ::
+    (ToolShed.SelfValidate.SelfValidator a,
+     ToolShed.SelfValidate.SelfValidator b) =>
+    a -> b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,1*U(1*C1(U),A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   w :: ToolShed.SelfValidate.SelfValidator a
+                   w1 :: ToolShed.SelfValidate.SelfValidator b
+                   ww :: a
+                   ww1 :: b ->
+                 case GHC.Base.++
+                        @ [GHC.Types.Char]
+                        (ToolShed.SelfValidate.getErrors @ a w ww)
+                        (ToolShed.SelfValidate.getErrors @ b w1 ww1) of wild {
+                   [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }) -}
+550d5cbc671a820579727dadbf087681
+  class SelfValidator v where
+    getErrors :: v -> [GHC.Base.String]
+    isValid {- Has default method -} :: v -> GHC.Types.Bool
+ab4ce8a7590db12347e0139962f16ac9
+  extractErrors ::
+    [(GHC.Types.Bool, GHC.Base.String)] -> [GHC.Base.String]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ x :: [(GHC.Types.Bool, GHC.Base.String)] ->
+                 ToolShed.SelfValidate.extractErrors_go x) -}
+4f9ea47e5ca24899f7f479fbee987c6e
+  extractErrors_go ::
+    [(GHC.Types.Bool, GHC.Base.String)] -> [[GHC.Types.Char]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+f5743e673dce09af59833569caefabb7
+  getFirstError ::
+    ToolShed.SelfValidate.SelfValidator v => v -> GHC.Base.String
+  {- Arity: 2, Strictness: <S(C(S)L),1*U(1*C1(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ v
+                   $dSelfValidator :: ToolShed.SelfValidate.SelfValidator v
+                   selfValidator :: v ->
+                 case ToolShed.SelfValidate.getErrors
+                        @ v
+                        $dSelfValidator
+                        selfValidator of wild {
+                   [] -> ToolShed.SelfValidate.getFirstError1 : ds1 ds2 -> ds1 }) -}
+cc4e5d947d2b5d84b34454a5ca779894
+  getFirstError1 :: GHC.Base.String
+  {- Strictness: b -}
+instance ToolShed.SelfValidate.SelfValidator [(,)]
+  = ToolShed.SelfValidate.$fSelfValidator(,)
+instance ToolShed.SelfValidate.SelfValidator [(,,)]
+  = ToolShed.SelfValidate.$fSelfValidator(,,)
+instance ToolShed.SelfValidate.SelfValidator [GHC.Arr.Array]
+  = ToolShed.SelfValidate.$fSelfValidatorArray
+instance ToolShed.SelfValidate.SelfValidator [Data.Map.Base.Map]
+  = ToolShed.SelfValidate.$fSelfValidatorMap
+instance ToolShed.SelfValidate.SelfValidator [GHC.Base.Maybe]
+  = ToolShed.SelfValidate.$fSelfValidatorMaybe
+instance ToolShed.SelfValidate.SelfValidator [Data.Set.Base.Set]
+  = ToolShed.SelfValidate.$fSelfValidatorSet
+instance ToolShed.SelfValidate.SelfValidator [[]]
+  = ToolShed.SelfValidate.$fSelfValidator[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

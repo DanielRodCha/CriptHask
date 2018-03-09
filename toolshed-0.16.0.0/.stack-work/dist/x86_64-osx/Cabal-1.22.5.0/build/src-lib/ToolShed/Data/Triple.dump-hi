@@ -1,0 +1,79 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:53.12095 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Data.Triple 7103
+  interface hash: 54e98418125b35b17411d1121fb1b01d
+  ABI hash: e5fab13fc9daa133850e00798d816225
+  export-list hash: 291234630aadf669f115ea35c819ad5d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9870f41b8ad9b30ee93550d6a576396c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Data.Triple.curry3
+  ToolShed.Data.Triple.getFirst
+  ToolShed.Data.Triple.getSecond
+  ToolShed.Data.Triple.getThird
+  ToolShed.Data.Triple.uncurry3
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+539f704a5db79f694973797635f6a021
+  curry3 :: ((a, b, c) -> result) -> a -> b -> c -> result
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,U><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ result
+                   f :: (a, b, c) -> result
+                   a1 :: a
+                   b1 :: b
+                   c1 :: c ->
+                 f (a1, b1, c1)) -}
+f36eab4e46eb5b57e4c31857e7f3ae0c
+  getFirst :: (a, b, c) -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b @ c ds :: (a, b, c) ->
+                 case ds of wild { (,,) a1 ds1 ds2 -> a1 }) -}
+cb3961c1df09798b5b104f24b5d04162
+  getSecond :: (a, b, c) -> b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b @ c ds :: (a, b, c) ->
+                 case ds of wild { (,,) ds1 b1 ds2 -> b1 }) -}
+d6223fef8505f791d113585e7937f8b4
+  getThird :: (a, b, c) -> c
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b @ c ds :: (a, b, c) ->
+                 case ds of wild { (,,) ds1 ds2 c1 -> c1 }) -}
+c917cbdfe3a0c4a90bfc69b6f073a81a
+  uncurry3 :: (a -> b -> c -> result) -> (a, b, c) -> result
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><S,1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   @ c
+                   @ result
+                   f :: a -> b -> c -> result
+                   ds :: (a, b, c) ->
+                 case ds of wild { (,,) a1 b1 c1 -> f a1 b1 c1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

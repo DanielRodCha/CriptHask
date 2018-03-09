@@ -1,0 +1,24 @@
+Configuring toolshed-0.16.0.0...
+Preprocessing library toolshed-0.16.0.0...
+[ 1 of 18] Compiling ToolShed.Test.ReversibleIO ( src-lib/ToolShed/Test/ReversibleIO.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Test/ReversibleIO.o )
+[ 2 of 18] Compiling ToolShed.Test.ReversibleEnum ( src-lib/ToolShed/Test/ReversibleEnum.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Test/ReversibleEnum.o )
+[ 3 of 18] Compiling ToolShed.Test.ReversibleBoundedEnum ( src-lib/ToolShed/Test/ReversibleBoundedEnum.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Test/ReversibleBoundedEnum.o )
+[ 4 of 18] Compiling ToolShed.Test.QuickCheck.Result ( src-lib/ToolShed/Test/QuickCheck/Result.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Test/QuickCheck/Result.o )
+[ 5 of 18] Compiling ToolShed.System.TimePure ( src-lib/ToolShed/System/TimePure.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/System/TimePure.o )
+[ 6 of 18] Compiling ToolShed.System.TimeAction ( src-lib/ToolShed/System/TimeAction.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/System/TimeAction.o )
+[ 7 of 18] Compiling ToolShed.System.Random ( src-lib/ToolShed/System/Random.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/System/Random.o )
+[ 8 of 18] Compiling ToolShed.System.File ( src-lib/ToolShed/System/File.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/System/File.o )
+[ 9 of 18] Compiling ToolShed.SelfValidate ( src-lib/ToolShed/SelfValidate.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/SelfValidate.o )
+[10 of 18] Compiling ToolShed.Defaultable ( src-lib/ToolShed/Defaultable.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Defaultable.o )
+[11 of 18] Compiling ToolShed.Options ( src-lib/ToolShed/Options.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Options.o )
+[12 of 18] Compiling ToolShed.Data.Triple ( src-lib/ToolShed/Data/Triple.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/Triple.o )
+[13 of 18] Compiling ToolShed.Data.Quadruple ( src-lib/ToolShed/Data/Quadruple.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/Quadruple.o )
+[14 of 18] Compiling ToolShed.Data.Pair ( src-lib/ToolShed/Data/Pair.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/Pair.o )
+[15 of 18] Compiling ToolShed.Data.List.Splits ( src-lib/ToolShed/Data/List/Splits.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/List/Splits.o )
+[16 of 18] Compiling ToolShed.Data.List.Runlength ( src-lib/ToolShed/Data/List/Runlength.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/List/Runlength.o )
+[17 of 18] Compiling ToolShed.Data.List ( src-lib/ToolShed/Data/List.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/List.o )
+[18 of 18] Compiling ToolShed.Data.Foldable ( src-lib/ToolShed/Data/Foldable.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.5.0/build/ToolShed/Data/Foldable.o )
+In-place registering toolshed-0.16.0.0...
+Installing library in
+/Users/danrodcha/CriptHask/.stack-work/install/x86_64-osx/lts-6.3/7.10.3/lib/x86_64-osx-ghc-7.10.3/toolshed-0.16.0.0-3VVSfwRhtQOBrJAbe7B7f3
+Registering toolshed-0.16.0.0...

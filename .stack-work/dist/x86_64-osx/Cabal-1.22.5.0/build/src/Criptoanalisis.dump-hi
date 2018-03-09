@@ -1,0 +1,227 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:12:07.40281 UTC
+
+interface CripH_6c6QSyYgErH80S6dnRE85H:Criptoanalisis 7103
+  interface hash: 5c7a30a62861a177b71a925ad7d57965
+  ABI hash: 2f5377d24f73a09ab5faed7909e61d4a
+  export-list hash: b3d8e1179e155833514019d4eeffcdad
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4c0a7b65a6dddbc4161c2e2bfabe3dc3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Criptoanalisis.aparicion
+  Criptoanalisis.aparicion2
+  Criptoanalisis.frecMayores
+  Criptoanalisis.frecuencias
+  Criptoanalisis.ordena2
+module dependencies: Asociacion1
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0*
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL template-haskell-2.10.0.0
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+import  -/  Asociacion1 7b26843ace7bd8fe186746353ab290d2
+  exports: 7db8fe3eaac51f331a6e6dfa0abc57b4
+  abecedario 453c630f5b3be7aa4a5267009bcf866c
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+03dfbc40799a6846d677b5694fcd4033
+  $waparicion :: GHC.Types.Char -> GHC.Base.String -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ w :: GHC.Types.Char w1 :: GHC.Base.String ->
+                 letrec {
+                   $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                   = \ w2 :: [GHC.Types.Char] ww :: GHC.Prim.Int# ->
+                     case w2 of wild {
+                       [] -> ww
+                       : y ys
+                       -> case y of wild1 { GHC.Types.C# c1 ->
+                          case w of wild2 { GHC.Types.C# c2 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.eqChar# c1 c2) of wild3 {
+                            GHC.Types.False -> $wgo ys ww
+                            GHC.Types.True -> $wgo ys (GHC.Prim.+# ww 1) } } } }
+                 } in
+                 $wgo w1 0) -}
+f9222d28396c0b3fe933f507680ff412
+  $waparicion2 :: GHC.Base.String -> GHC.Base.String -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+ecf761ed8373788c1cdd58726852f9b5
+  $wlvl ::
+    GHC.Prim.Int#
+    -> GHC.Types.Char
+    -> GHC.Prim.Int#
+    -> GHC.Types.Char
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U)><L,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Types.Char
+                   ww2 :: GHC.Prim.Int#
+                   ww3 :: GHC.Types.Char ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww2 ww) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# ww2 ww) of wild1 {
+                        GHC.Types.False -> GHC.Types.GT
+                        GHC.Types.True -> GHC.Classes.$fOrdChar_$ccompare ww3 ww1 }
+                   GHC.Types.True -> GHC.Types.LT }) -}
+eb1163e833e898e5200409b1def5c260
+  aparicion :: GHC.Types.Char -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(U)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Char w1 :: GHC.Base.String ->
+                 case Criptoanalisis.$waparicion w w1 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+fb516ea6d0a1832f5dbb2b70827cee72
+  aparicion2 :: GHC.Base.String -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Base.String w1 :: GHC.Base.String ->
+                 case Criptoanalisis.$waparicion2 w w1 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+788c6f52dfa5f4d550ca95854b434949
+  frecMayores :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ m :: GHC.Base.String ->
+                 let {
+                   frecMayor :: GHC.Types.Int
+                   = letrec {
+                       go :: [GHC.Types.Char] -> [GHC.Types.Int]
+                         {- Arity: 1, Strictness: <S,1*U> -}
+                       = \ ds :: [GHC.Types.Char] ->
+                         case ds of wild {
+                           [] -> GHC.Types.[] @ GHC.Types.Int
+                           : y ys
+                           -> GHC.Types.:
+                                @ GHC.Types.Int
+                                (Criptoanalisis.aparicion y m)
+                                (go ys) }
+                     } in
+                     GHC.List.strictMaximum
+                       @ GHC.Types.Int
+                       GHC.Classes.$fOrdInt
+                       (go Asociacion1.abecedario)
+                 } in
+                 letrec {
+                   go :: [(GHC.Types.Int, GHC.Types.Char)] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [(GHC.Types.Int, GHC.Types.Char)] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys
+                       -> case y of wild1 { (,) x y1 ->
+                          case x of wild2 { GHC.Types.I# x1 ->
+                          case frecMayor of wild3 { GHC.Types.I# y2 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.==# x1 y2) of wild4 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True -> GHC.Types.: @ GHC.Types.Char y1 (go ys) } } } } }
+                 } in
+                 go (Criptoanalisis.frecuencias m)) -}
+5f1cdbb5bfcafc553ef61ddb826e4057
+  frecuencias :: GHC.Base.String -> [(GHC.Types.Int, GHC.Types.Char)]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ m :: GHC.Base.String ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> [(GHC.Types.Int, GHC.Types.Char)]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ ds :: [GHC.Types.Char] ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Char)
+                       : y ys
+                       -> GHC.Types.:
+                            @ (GHC.Types.Int, GHC.Types.Char)
+                            (Criptoanalisis.aparicion y m, y)
+                            (go ys) }
+                 } in
+                 go Asociacion1.abecedario) -}
+fa743f04d2ad5c4214ca0e9190540bf9
+  ordena1 ::
+    (GHC.Types.Int, GHC.Types.Char)
+    -> (GHC.Types.Int, GHC.Types.Char) -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U(U),1*U(U))><S(SL),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (GHC.Types.Int, GHC.Types.Char)
+                   w1 :: (GHC.Types.Int, GHC.Types.Char) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { (,) ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Criptoanalisis.$wlvl ww4 ww2 ww9 ww7 } } } }) -}
+16f9bdf3c177e36c0e5f9266c6bdfc47
+  ordena2 :: [(GHC.Types.Int, GHC.Types.Char)] -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ xs :: [(GHC.Types.Int, GHC.Types.Char)] ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      c :: GHC.Types.Char -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ (GHC.Types.Int, GHC.Types.Char)
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ (GHC.Types.Int, GHC.Types.Char)
+                         c
+                         (Data.Tuple.snd @ GHC.Types.Int @ GHC.Types.Char))
+                      n
+                      (Data.OldList.sortBy
+                         @ (GHC.Types.Int, GHC.Types.Char)
+                         Criptoanalisis.ordena1
+                         xs))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

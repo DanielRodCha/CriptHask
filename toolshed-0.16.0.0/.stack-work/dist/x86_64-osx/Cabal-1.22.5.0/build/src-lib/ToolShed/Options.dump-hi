@@ -1,0 +1,37 @@
+
+==================== FINAL INTERFACE ====================
+2018-03-09 08:08:52.998864 UTC
+
+interface tools_3VVSfwRhtQOBrJAbe7B7f3:ToolShed.Options 7103
+  interface hash: eefcee625bdd653d22bd801921e19e92
+  ABI hash: afde6a429d95aba9e3a4593d46255451
+  export-list hash: 262d2dba16b13d800836709b72d156ee
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b3295059d91cdcd35dafb9900006e2ec
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ToolShed.Options.Options{ToolShed.Options.blankValue}
+module dependencies: ToolShed.Defaultable
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ToolShed.Defaultable 8797a917ae774dc03fbd85ee96a0f964
+  exports: e8a8384b1f32eee3ba24844c23705f40
+  Defaultable 16cbfe1f1391236701df2930a0fc719d
+db04348ff2b86ca05f9825a5a6d1d3a4
+  class ToolShed.Defaultable.Defaultable a => Options a where
+    blankValue :: a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
